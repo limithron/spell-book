@@ -1,441 +1,3474 @@
 {
-	"_meta": {
-		"sources": [
-			{
-				"json": "VeiledT",
-				"abbreviation": "VT",
-				"full": "Veiled Threats",
-				"authors": [
-					"The_Unapproachable"
-				],
-				"convertedBy": [
-					"zombiekiller 101"
-				],
-				"version": "1.1",
-				"url": "https://drive.google.com/file/d/0BxpMSUl2aiPyRjY3QlhWODNuSzA/view",
-				"targetSchema": "1.6.3"
-			}
-		],
-		"dateAdded": 1555319662,
-		"dateLastModified": 1555319662,
-		"internalCopies": [
-			"monsterFluff"
-		]
-	},
-	"monster": [
-		{
-		"source": "Pirate",
-		"name": "Captain Blackheart",
-		"size": "M",{
-	"_meta": {
-		"sources": [
-			{
-				"json": "VeiledT",
-				"abbreviation": "VT",
-				"full": "Veiled Threats",
-				"authors": [
-					"The_Unapproachable"
-				],
-				"convertedBy": [
-					"zombiekiller 101"
-				],
-				"version": "1.1",
-				"url": "https://drive.google.com/file/d/0BxpMSUl2aiPyRjY3QlhWODNuSzA/view",
-				"targetSchema": "1.6.3"
-			}
-		],
-		"dateAdded": 1555319662,
-		"dateLastModified": 1555319662,
-		"internalCopies": [
-			"monsterFluff"
-		]
-	},
-	"monster": [
-		{
-		"source": "Pirate",
-		"name": "Captain Blackheart",
-		"size": "M",
-		"type": "humanoid",
-		"source": "TalesoftheCaribbean",
-		"alignment": [
-			"L",
-			"E"
-		],
-		"ac": [
-			12,
-			{
-				"ac": 15,
-				"condition": "with mage armor",
-				"braces": true
-			}
-		],
-		"hp": {
-			"formula": "14d8 + 28",
-			"average": 91
-		},
-		"speed": {
-			"walk": 30,
-			"swim": 15
-		},
-		"str": 16,
-		"dex": 14,
-		"con": 15,
-		"int": 12,
-		"wis": 12,
-		"cha": 18,
-		"passive": 11,
-		"cr": "6",
-		"shortName": "Blackheartumanoid\", \t\"source\": \"TalesoftheCaribbean\", \t\"alignment\": [ \t\t\"L\", \t\t\"E\" \t], \t\"ac\": [ \t\t12, \t\t{",
-		"languages": [
-			"Common",
-			"French"
-		],
-		"languageTags": [
-			"C"
-		],
-		"save": {
-			"wis": "+4",
-			"cha": "+7"
-		},
-		"skill": {
-			"arcana": "+4",
-			"history": "+4"
-		},
-		"resist": [
-			"psychic"
-		],
-		"spellcasting": [{
-				"name": "Innate Spellcasting",
-				"headerEntries": [
-					"Blackheart's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save {@dc 15}), requiring no material components:"
-				],
-				"will": [
-					"{@spell detect magic|PHB}",
-					"{@spell jump|PHB}",
-					"{@spell levitate|PHB}",
-					"{@spell mage armor|PHB} (self only)"
-				],
-				"daily": {
-					"1e": [
-						"{@spell arcane gate|PHB}",
-						"{@spell speak with dead|PHB}",
-						"{@spell true seeing|PHB}"
+	"sync": {
+		"HOMEBREW_META_STORAGE": {
+			"sources": [
+				{
+					"json": "TalesoftheCaribbean",
+					"abbreviation": "TotC",
+					"full": "Tales of the Caribbean",
+					"url": "",
+					"authors": [
+						"Luke Stratton"
+					],
+					"convertedBy": [
+						"Luke Stratton"
 					]
+				}
+			]
+		}
+	},
+	"async": {
+		"filterBoxState_bestiary.html": {
+			"box": {
+				"meta": {
+					"modeCombineFilters": "and",
+					"isSummaryHidden": false,
+					"isBrewDefaultHidden": false
 				},
-				"ability": "cha",
-				"type": "spellcasting"
+				"minisHidden": {},
+				"combineAs": {}
 			},
-			{
-				"name": "Spellcasting",
-				"headerEntries": [
-					"Blackheart is a 14th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). He regains his expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
-				],
-				"spells": {
-					"0": {
-						"spells": [
-							"{@spell chill touch|PHB}",
-							"{@spell eldritch blast|PHB}",
-							"{@spell guidance|PHB}",
-							"{@spell mage hand|PHB}",
-							"{@spell minor illusion|PHB}",
-							"{@spell prestidigitation|PHB}",
-							"{@spell shocking grasp|PHB}"
-						]
+			"filters": {
+				"Source": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
 					},
-					"5": {
-						"spells": [
-							"{@spell armor of Agathys|PHB}",
-							"{@spell arms of Hadar|PHB}",
-							"{@spell clairvoyance|PHB}",
-							"{@spell contact other plane|PHB}",
-							"{@spell crown of madness|PHB}",
-							"{@spell detect thoughts|PHB}",
-							"{@spell dimension door|PHB}",
-							"{@spell dissonant whispers|PHB}",
-							"{@spell dominate beast|PHB}",
-							"{@spell telekinesis|PHB}",
-							"{@spell vampiric touch|PHB}"
-						],
-						"slots": 3,
-						"lower": 1
+					"state": {
+						"AI": 1,
+						"BGDIA": 1,
+						"CoS": 1,
+						"DC": 1,
+						"Mag": 0,
+						"DIP": 1,
+						"DMG": 1,
+						"ERLW": 1,
+						"ESK": 1,
+						"EGW": 1,
+						"GoS": 1,
+						"GGR": 1,
+						"HotDQ": 1,
+						"HftT": 1,
+						"IMR": 0,
+						"KKW": 1,
+						"Stream": 0,
+						"LR": 0,
+						"LLK": 0,
+						"LMoP": 1,
+						"MM": 1,
+						"MFF": 1,
+						"MTF": 1,
+						"OotA": 1,
+						"PSA": 0,
+						"PSD": 0,
+						"PSI": 0,
+						"PSX": 0,
+						"PSK": 0,
+						"PSZ": 0,
+						"PHB": 1,
+						"PotA": 1,
+						"SADS": 0,
+						"SDW": 1,
+						"SKT": 1,
+						"SLW": 1,
+						"TftYP": 1,
+						"TalesoftheCaribbean": 1,
+						"RMBRE": 1,
+						"OoW": 1,
+						"RoT": 1,
+						"TTP": 0,
+						"ToA": 1,
+						"UA2020SpellsAndMagicTattoos": 0,
+						"UA2020SubclassesPt2": 0,
+						"UAArtificerRevisited": 0,
+						"UAClassFeatureVariants": 0,
+						"UAClericDruidWizard": 0,
+						"VGM": 1,
+						"WDH": 1,
+						"WDMM": 1,
+						"UAWGE": 0,
+						"XGE": 1
+					},
+					"nestsHidden": {}
+				},
+				"Challenge Rating": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 0,
+						"max": 35,
+						"curMin": 0,
+						"curMax": 35
 					}
 				},
-				"ability": "cha",
-				"type": "spellcasting"
-			}
-		],
-		"spellcastingTags": [
-			"I",
-			"CL"
-		],
-		"trait": [{
-			"name": "Whispering Aura",
-			"entries": [
-				"At the start of each of Blackheart's turns, each creature of its choice within 5 feet of it must succeed on a {@dc 15} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage, provided that Blackheart isn't {@condition incapacitated}."
-			]
-		}],
-		"damageTags": [
-			"S",
-			"P",
-			"Y"
-		],
-		"isNamedCreature": true,
-		"reaction": [{
-			"name": "Shape Up, Ye Dog (2/Day)",
-			"entries": [
-				"Whenever a friendly creature within 30 feet of Blackheart that can hear it misses with an attack, Blackheart can yell perilous threats to allow that creature to reroll the attack roll."
-			]
-		}],
-		"action": [{
-				"name": "Multiattack",
-				"entries": [
-					"The captain makes two attacks: one with his flintlock pistol and one with its scimitar."
-				]
-			},
-			{
-				"name": "Scimitar",
-				"entries": [
-					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 6}) slashing damage."
-				]
-			},
-			{
-				"name": "Flintlock Pistol (Reload 1)",
-				"entries": [
-					"{@atk rw} {@hit 5} to hit, range 15/60 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
-				]
-			}
-		],
-		"actionTags": [
-			"Multiattack"
-		],
-		"miscTags": [
-			"MW",
-			"RW"
-		],
-		"tokenUrl": "https://i.imgur.com/YBs2HDN.png",
-		"fluff": {
-			"entries": [
-				"\"Angus Skyme came to the Spanish Main in the brig of HMSÂ Prudence. He escaped the gallows and gathered the roughest crew in the Caribbean. Blackheart shows no quarter to his victims or crew, and he has killed many of both for his amusement and profit. He still bears the scar from the duel he fought with Jack Hawkins over Lady Arcadia de Sol, and he still nurses the grudge that goes with it.\"",
-				"Known to use torture and other unspeakable acts to acquire gold, Blackheart is considered by many to be no better than the Cursed. Still, he is pirate through and through, only too willing to inflict a little bloodshed to guarantee respect.",
-				"Some say that Blackheart has already sold his soul to the demons of the sea. Others say that he fights them like he has fought everyone else: to his death or theirs.",
-				"Now that Blackheart has carved out an empire based on fear and terror, he can concentrate on his biggest goal: destroying the other pirates of the Spanish Main, starting with Jack Hawkins and his accursed monkey.",
-				"â€œNow tell me,â€? Blackheart said, his voice a low growl barely audible above the creaking in the shipâ€™s hold. â€œTell me where you buried De La Cruzâ€™ gold.â€?",
-				"â€œNever!â€? Sunderland yelled, not quite believing his own feeble reply.",
-				"Blackheart shook his shaggy head, and beneath his grizzled beard cracked a smile like a broken dinner plate. He picked up a small chest and placed it on the barrel next to Sunderland, opening it so that the prone Englishman could see its contents. Blackheart extracted a pair of wicked metal implements with seemingly unnecessary blades and teeth.",
-				"â€œI think yeâ€™ll change your mind,â€? Blackheart said. Sunderlandâ€™s screams tore through the night, startling the men on watch who looked at each other nervously. Each time the shrieking began again, the helmsman took a drink of rum. An hour later, when Blackheart emerged from the hold, the helmsman could barely stand.",
-				"â€œHereâ€™s yer new heading,â€? Blackheart said, dropping a rough map on the deck, drawn in blood on a torn bandage. â€œMake for that island as if Hell itself were on yer heels.â€?"
-			],
-			"images": [{
-				"type": "image",
-				"href": {
-					"type": "external",
-					"url": "https://i.imgur.com/osUyW3V.jpg"
-				}
-			}]
-		},
-		"environment": [
-			"coastal"
-		],
-		"group": "Pirates",
-		"isNpc": true,
-		"alias": [
-			"Blackbeard",
-			"Edward Thatch",
-			"Edward Teach"
-		],
-		"uniqueId": "d7c14116fd5f00d0f03c092f06417d39"
-		}
-	]
-}
-		"type": "humanoid",
-		"source": "TalesoftheCaribbean",
-		"alignment": [
-			"L",
-			"E"
-		],
-		"ac": [
-			12,
-			{
-				"ac": 15,
-				"condition": "with mage armor",
-				"braces": true
-			}
-		],
-		"hp": {
-			"formula": "14d8 + 28",
-			"average": 91
-		},
-		"speed": {
-			"walk": 30,
-			"swim": 15
-		},
-		"str": 16,
-		"dex": 14,
-		"con": 15,
-		"int": 12,
-		"wis": 12,
-		"cha": 18,
-		"passive": 11,
-		"cr": "6",
-		"shortName": "Blackheartumanoid\", \t\"source\": \"TalesoftheCaribbean\", \t\"alignment\": [ \t\t\"L\", \t\t\"E\" \t], \t\"ac\": [ \t\t12, \t\t{",
-		"languages": [
-			"Common",
-			"French"
-		],
-		"languageTags": [
-			"C"
-		],
-		"save": {
-			"wis": "+4",
-			"cha": "+7"
-		},
-		"skill": {
-			"arcana": "+4",
-			"history": "+4"
-		},
-		"resist": [
-			"psychic"
-		],
-		"spellcasting": [{
-				"name": "Innate Spellcasting",
-				"headerEntries": [
-					"Blackheart's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save {@dc 15}), requiring no material components:"
-				],
-				"will": [
-					"{@spell detect magic|PHB}",
-					"{@spell jump|PHB}",
-					"{@spell levitate|PHB}",
-					"{@spell mage armor|PHB} (self only)"
-				],
-				"daily": {
-					"1e": [
-						"{@spell arcane gate|PHB}",
-						"{@spell speak with dead|PHB}",
-						"{@spell true seeing|PHB}"
-					]
-				},
-				"ability": "cha",
-				"type": "spellcasting"
-			},
-			{
-				"name": "Spellcasting",
-				"headerEntries": [
-					"Blackheart is a 14th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). He regains his expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
-				],
-				"spells": {
-					"0": {
-						"spells": [
-							"{@spell chill touch|PHB}",
-							"{@spell eldritch blast|PHB}",
-							"{@spell guidance|PHB}",
-							"{@spell mage hand|PHB}",
-							"{@spell minor illusion|PHB}",
-							"{@spell prestidigitation|PHB}",
-							"{@spell shocking grasp|PHB}"
-						]
+				"Type": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
 					},
-					"5": {
-						"spells": [
-							"{@spell armor of Agathys|PHB}",
-							"{@spell arms of Hadar|PHB}",
-							"{@spell clairvoyance|PHB}",
-							"{@spell contact other plane|PHB}",
-							"{@spell crown of madness|PHB}",
-							"{@spell detect thoughts|PHB}",
-							"{@spell dimension door|PHB}",
-							"{@spell dissonant whispers|PHB}",
-							"{@spell dominate beast|PHB}",
-							"{@spell telekinesis|PHB}",
-							"{@spell vampiric touch|PHB}"
-						],
-						"slots": 3,
-						"lower": 1
+					"state": {
+						"aberration": 0,
+						"beast": 0,
+						"celestial": 0,
+						"construct": 0,
+						"dragon": 0,
+						"elemental": 0,
+						"fey": 0,
+						"fiend": 0,
+						"giant": 0,
+						"humanoid": 0,
+						"monstrosity": 0,
+						"ooze": 0,
+						"plant": 0,
+						"undead": 0
+					},
+					"nestsHidden": {}
+				},
+				"Tag": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Simic hybrid": 0,
+						"aarakocra": 0,
+						"angel": 0,
+						"any race": 0,
+						"blindheim": 0,
+						"bullywug": 0,
+						"changeling": 0,
+						"cloud giant": 0,
+						"demon": 0,
+						"derro": 0,
+						"devil": 0,
+						"dire corby": 0,
+						"dragonborn": 0,
+						"dusk elf": 0,
+						"dwarf": 0,
+						"earth genasi": 0,
+						"elf": 0,
+						"fire genasi": 0,
+						"fire giant": 0,
+						"firenewt": 0,
+						"frost giant": 0,
+						"genasi": 0,
+						"gith": 0,
+						"gnoll": 0,
+						"gnome": 0,
+						"goblin": 0,
+						"goblinoid": 0,
+						"goliath": 0,
+						"grimlock": 0,
+						"grung": 0,
+						"half-black dragon": 0,
+						"half-dragon": 0,
+						"half-elf": 0,
+						"half-orc": 0,
+						"halfling": 0,
+						"high elf": 0,
+						"hill giant": 0,
+						"human": 0,
+						"inevitable": 0,
+						"jermlaine": 0,
+						"kalashtar": 0,
+						"kenku": 0,
+						"kobold": 0,
+						"kraul": 0,
+						"kuo-toa": 0,
+						"lava child": 0,
+						"lizardfolk": 0,
+						"locathah": 0,
+						"meazel": 0,
+						"merfolk": 0,
+						"mongrelfolk": 0,
+						"nagpa": 0,
+						"orc": 0,
+						"quaggoth": 0,
+						"sahuagin": 0,
+						"saurial": 0,
+						"shapechanger": 0,
+						"shield dwarf": 0,
+						"shifter": 0,
+						"stone giant": 0,
+						"storm giant": 0,
+						"strongheart halfling": 0,
+						"swarm": 0,
+						"tabaxi": 0,
+						"thri-kreen": 0,
+						"tiefling": 0,
+						"titan": 0,
+						"tortle": 0,
+						"triton": 0,
+						"troglodyte": 0,
+						"warforged": 0,
+						"water genasi": 0,
+						"xvart": 0,
+						"yuan-ti": 0,
+						"yugoloth": 0
+					},
+					"nestsHidden": {}
+				},
+				"Environment": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"arctic": 0,
+						"coastal": 0,
+						"desert": 0,
+						"forest": 0,
+						"grassland": 0,
+						"hill": 0,
+						"mountain": 0,
+						"swamp": 0,
+						"underdark": 0,
+						"underwater": 0,
+						"urban": 0
+					},
+					"nestsHidden": {}
+				},
+				"Damage": {
+					"meta": {
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"mode": "and"
 					}
 				},
-				"ability": "cha",
-				"type": "spellcasting"
-			}
-		],
-		"spellcastingTags": [
-			"I",
-			"CL"
-		],
-		"trait": [{
-			"name": "Whispering Aura",
-			"entries": [
-				"At the start of each of Blackheart's turns, each creature of its choice within 5 feet of it must succeed on a {@dc 15} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage, provided that Blackheart isn't {@condition incapacitated}."
-			]
-		}],
-		"damageTags": [
-			"S",
-			"P",
-			"Y"
-		],
-		"isNamedCreature": true,
-		"reaction": [{
-			"name": "Shape Up, Ye Dog (2/Day)",
-			"entries": [
-				"Whenever a friendly creature within 30 feet of Blackheart that can hear it misses with an attack, Blackheart can yell perilous threats to allow that creature to reroll the attack roll."
-			]
-		}],
-		"action": [{
-				"name": "Multiattack",
-				"entries": [
-					"The captain makes two attacks: one with his flintlock pistol and one with its scimitar."
-				]
-			},
-			{
-				"name": "Scimitar",
-				"entries": [
-					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 6}) slashing damage."
-				]
-			},
-			{
-				"name": "Flintlock Pistol (Reload 1)",
-				"entries": [
-					"{@atk rw} {@hit 5} to hit, range 15/60 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
-				]
-			}
-		],
-		"actionTags": [
-			"Multiattack"
-		],
-		"miscTags": [
-			"MW",
-			"RW"
-		],
-		"tokenUrl": "https://i.imgur.com/YBs2HDN.png",
-		"fluff": {
-			"entries": [
-				"\"Angus Skyme came to the Spanish Main in the brig of HMSÂ Prudence. He escaped the gallows and gathered the roughest crew in the Caribbean. Blackheart shows no quarter to his victims or crew, and he has killed many of both for his amusement and profit. He still bears the scar from the duel he fought with Jack Hawkins over Lady Arcadia de Sol, and he still nurses the grudge that goes with it.\"",
-				"Known to use torture and other unspeakable acts to acquire gold, Blackheart is considered by many to be no better than the Cursed. Still, he is pirate through and through, only too willing to inflict a little bloodshed to guarantee respect.",
-				"Some say that Blackheart has already sold his soul to the demons of the sea. Others say that he fights them like he has fought everyone else: to his death or theirs.",
-				"Now that Blackheart has carved out an empire based on fear and terror, he can concentrate on his biggest goal: destroying the other pirates of the Spanish Main, starting with Jack Hawkins and his accursed monkey.",
-				"â€œNow tell me,â€? Blackheart said, his voice a low growl barely audible above the creaking in the shipâ€™s hold. â€œTell me where you buried De La Cruzâ€™ gold.â€?",
-				"â€œNever!â€? Sunderland yelled, not quite believing his own feeble reply.",
-				"Blackheart shook his shaggy head, and beneath his grizzled beard cracked a smile like a broken dinner plate. He picked up a small chest and placed it on the barrel next to Sunderland, opening it so that the prone Englishman could see its contents. Blackheart extracted a pair of wicked metal implements with seemingly unnecessary blades and teeth.",
-				"â€œI think yeâ€™ll change your mind,â€? Blackheart said. Sunderlandâ€™s screams tore through the night, startling the men on watch who looked at each other nervously. Each time the shrieking began again, the helmsman took a drink of rum. An hour later, when Blackheart emerged from the hold, the helmsman could barely stand.",
-				"â€œHereâ€™s yer new heading,â€? Blackheart said, dropping a rough map on the deck, drawn in blood on a torn bandage. â€œMake for that island as if Hell itself were on yer heels.â€?"
-			],
-			"images": [{
-				"type": "image",
-				"href": {
-					"type": "external",
-					"url": "https://i.imgur.com/osUyW3V.jpg"
+				"Vulnerabilities": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"acid": 0,
+						"bludgeoning": 0,
+						"cold": 0,
+						"fire": 0,
+						"force": 0,
+						"lightning": 0,
+						"necrotic": 0,
+						"piercing": 0,
+						"poison": 0,
+						"psychic": 0,
+						"radiant": 0,
+						"slashing": 0,
+						"thunder": 0
+					},
+					"nestsHidden": {}
+				},
+				"Resistance": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"acid": 0,
+						"bludgeoning": 0,
+						"cold": 0,
+						"fire": 0,
+						"force": 0,
+						"lightning": 0,
+						"necrotic": 0,
+						"piercing": 0,
+						"poison": 0,
+						"psychic": 0,
+						"radiant": 0,
+						"slashing": 0,
+						"thunder": 0
+					},
+					"nestsHidden": {}
+				},
+				"Immunity": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"acid": 0,
+						"bludgeoning": 0,
+						"cold": 0,
+						"fire": 0,
+						"force": 0,
+						"lightning": 0,
+						"necrotic": 0,
+						"piercing": 0,
+						"poison": 0,
+						"psychic": 0,
+						"radiant": 0,
+						"slashing": 0,
+						"thunder": 0
+					},
+					"nestsHidden": {}
+				},
+				"Condition Immunity": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"blinded": 0,
+						"charmed": 0,
+						"deafened": 0,
+						"disease": 0,
+						"exhaustion": 0,
+						"frightened": 0,
+						"grappled": 0,
+						"incapacitated": 0,
+						"invisible": 0,
+						"paralyzed": 0,
+						"petrified": 0,
+						"poisoned": 0,
+						"prone": 0,
+						"restrained": 0,
+						"stunned": 0,
+						"unconscious": 0
+					},
+					"nestsHidden": {}
+				},
+				"Traits": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Aggressive": 0,
+						"Ambusher": 0,
+						"Amorphous": 0,
+						"Amphibious": 0,
+						"Antimagic Susceptibility": 0,
+						"Brute": 0,
+						"Charge": 0,
+						"Damage Absorption": 0,
+						"Death Burst": 0,
+						"Devil's Sight": 0,
+						"False Appearance": 0,
+						"Fey Ancestry": 0,
+						"Flyby": 0,
+						"Hold Breath": 0,
+						"Illumination": 0,
+						"Immutable Form": 0,
+						"Incorporeal Movement": 0,
+						"Keen Senses": 0,
+						"Legendary Resistances": 0,
+						"Light Sensitivity": 0,
+						"Magic Resistance": 0,
+						"Magic Weapons": 0,
+						"Pack Tactics": 0,
+						"Pounce": 0,
+						"Rampage": 0,
+						"Reckless": 0,
+						"Regeneration": 0,
+						"Rejuvenation": 0,
+						"Shapechanger": 0,
+						"Siege Monster": 0,
+						"Sneak Attack": 0,
+						"Spider Climb": 0,
+						"Sunlight Sensitivity": 0,
+						"Turn Immunity": 0,
+						"Turn Resistance": 0,
+						"Undead Fortitude": 0,
+						"Water Breathing": 0,
+						"Web Sense": 0,
+						"Web Walker": 0
+					},
+					"nestsHidden": {}
+				},
+				"Actions & Reactions": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Frightful Presence": 0,
+						"Multiattack": 0,
+						"Parry": 0,
+						"Swallow": 0,
+						"Teleport": 0,
+						"Tentacles": 0
+					},
+					"nestsHidden": {}
+				},
+				"Miscellaneous": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"AOE": 0,
+						"Adventure NPC": 0,
+						"Familiar": 0,
+						"Has Alternate Token": 0,
+						"Has Token": 0,
+						"Has Variants": 0,
+						"Lair Actions": 0,
+						"Legendary": 0,
+						"MW": 0,
+						"Modified Copy": 0,
+						"RCH": 0,
+						"RNG": 0,
+						"RW": 0,
+						"Reactions": 0,
+						"Regional Effects": 0,
+						"SRD": 0,
+						"Spellcaster": 0,
+						"Spellcaster, Strength": 0,
+						"Spellcaster, Dexterity": 0,
+						"Spellcaster, Constitution": 0,
+						"Spellcaster, Intelligence": 0,
+						"Spellcaster, Wisdom": 0,
+						"Spellcaster, Charisma": 0,
+						"Swarm": 0,
+						"THW": 0
+					},
+					"nestsHidden": {}
+				},
+				"Spellcasting Type": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"CB": 0,
+						"CC": 0,
+						"CD": 0,
+						"CL": 0,
+						"CP": 0,
+						"CR": 0,
+						"CS": 0,
+						"CW": 0,
+						"F": 0,
+						"I": 0,
+						"P": 0,
+						"S": 0
+					},
+					"nestsHidden": {}
+				},
+				"Size": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"T": 0,
+						"S": 0,
+						"M": 0,
+						"L": 0,
+						"H": 0,
+						"G": 0,
+						"V": 0
+					},
+					"nestsHidden": {}
+				},
+				"Speed": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 0,
+						"max": 400,
+						"curMin": 0,
+						"curMax": 400
+					}
+				},
+				"Speed Type": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"burrow": 0,
+						"climb": 0,
+						"fly": 0,
+						"hover": 0,
+						"swim": 0,
+						"walk": 0
+					},
+					"nestsHidden": {}
+				},
+				"Alignment": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"L": 0,
+						"NX": 0,
+						"C": 0,
+						"G": 0,
+						"NY": 0,
+						"E": 0,
+						"N": 0,
+						"U": 0,
+						"A": 0
+					},
+					"nestsHidden": {}
+				},
+				"Saves": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"str": 0,
+						"dex": 0,
+						"con": 0,
+						"int": 0,
+						"wis": 0,
+						"cha": 0
+					},
+					"nestsHidden": {}
+				},
+				"Skills": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"acrobatics": 0,
+						"animal handling": 0,
+						"arcana": 0,
+						"athletics": 0,
+						"deception": 0,
+						"history": 0,
+						"insight": 0,
+						"intimidation": 0,
+						"investigation": 0,
+						"medicine": 0,
+						"nature": 0,
+						"perception": 0,
+						"performance": 0,
+						"persuasion": 0,
+						"religion": 0,
+						"sleight of hand": 0,
+						"stealth": 0,
+						"survival": 0
+					},
+					"nestsHidden": {}
+				},
+				"Senses": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"B": 0,
+						"D": 0,
+						"SD": 0,
+						"T": 0,
+						"U": 0
+					},
+					"nestsHidden": {}
+				},
+				"Languages": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"AB": 0,
+						"AQ": 0,
+						"AU": 0,
+						"C": 0,
+						"CE": 0,
+						"CS": 0,
+						"D": 0,
+						"DR": 0,
+						"DS": 0,
+						"DU": 0,
+						"E": 0,
+						"G": 0,
+						"GI": 0,
+						"GO": 0,
+						"GTH": 0,
+						"H": 0,
+						"I": 0,
+						"IG": 0,
+						"LF": 0,
+						"O": 0,
+						"OTH": 0,
+						"P": 0,
+						"S": 0,
+						"T": 0,
+						"TC": 0,
+						"TP": 0,
+						"U": 0,
+						"X": 0,
+						"XX": 0
+					},
+					"nestsHidden": {}
+				},
+				"Damage Inflicted": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"A": 0,
+						"B": 0,
+						"C": 0,
+						"F": 0,
+						"I": 0,
+						"L": 0,
+						"N": 0,
+						"O": 0,
+						"P": 0,
+						"R": 0,
+						"S": 0,
+						"T": 0,
+						"Y": 0
+					},
+					"nestsHidden": {}
+				},
+				"Conditions Inflicted": {
+					"meta": {
+						"isHidden": false,
+						"isMobileHeaderHidden": true,
+						"combineBlue": "or",
+						"combineRed": "or"
+					},
+					"state": {
+						"mode": "and",
+						"blinded": 0,
+						"charmed": 0,
+						"deafened": 0,
+						"exhaustion": 0,
+						"frightened": 0,
+						"grappled": 0,
+						"incapacitated": 0,
+						"invisible": 0,
+						"paralyzed": 0,
+						"petrified": 0,
+						"poisoned": 0,
+						"prone": 0,
+						"restrained": 0,
+						"stunned": 0,
+						"unconscious": 0
+					}
+				},
+				"By Traits/Actions": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"blinded": 0,
+						"charmed": 0,
+						"deafened": 0,
+						"exhaustion": 0,
+						"frightened": 0,
+						"grappled": 0,
+						"incapacitated": 0,
+						"invisible": 0,
+						"paralyzed": 0,
+						"petrified": 0,
+						"poisoned": 0,
+						"prone": 0,
+						"restrained": 0,
+						"stunned": 0,
+						"unconscious": 0
+					},
+					"nestsHidden": {}
+				},
+				"By Lair Actions/Regional Effects": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"blinded": 0,
+						"charmed": 0,
+						"deafened": 0,
+						"exhaustion": 0,
+						"frightened": 0,
+						"grappled": 0,
+						"incapacitated": 0,
+						"invisible": 0,
+						"paralyzed": 0,
+						"petrified": 0,
+						"poisoned": 0,
+						"prone": 0,
+						"restrained": 0,
+						"stunned": 0,
+						"unconscious": 0
+					},
+					"nestsHidden": {}
+				},
+				"By Spells": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"blinded": 0,
+						"charmed": 0,
+						"deafened": 0,
+						"exhaustion": 0,
+						"frightened": 0,
+						"grappled": 0,
+						"incapacitated": 0,
+						"invisible": 0,
+						"paralyzed": 0,
+						"petrified": 0,
+						"poisoned": 0,
+						"prone": 0,
+						"restrained": 0,
+						"stunned": 0,
+						"unconscious": 0
+					},
+					"nestsHidden": {}
+				},
+				"Armor Class": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 0,
+						"max": 25,
+						"curMin": 0,
+						"curMax": 25
+					}
+				},
+				"Average Hit Points": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 0,
+						"max": 676,
+						"curMin": 0,
+						"curMax": 676
+					}
+				},
+				"Ability Scores": {
+					"meta": {
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"mode": "and"
+					}
+				},
+				"Strength": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 1,
+						"max": 30,
+						"curMin": 1,
+						"curMax": 30
+					}
+				},
+				"Dexterity": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 1,
+						"max": 30,
+						"curMin": 1,
+						"curMax": 30
+					}
+				},
+				"Constitution": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 1,
+						"max": 30,
+						"curMin": 1,
+						"curMax": 30
+					}
+				},
+				"Intelligence": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 1,
+						"max": 30,
+						"curMin": 1,
+						"curMax": 30
+					}
+				},
+				"Wisdom": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 1,
+						"max": 30,
+						"curMin": 1,
+						"curMax": 30
+					}
+				},
+				"Charisma": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 1,
+						"max": 30,
+						"curMin": 1,
+						"curMax": 30
+					}
 				}
-			}]
+			}
 		},
-		"environment": [
-			"coastal"
-		],
-		"group": "Pirates",
-		"isNpc": true,
-		"alias": [
-			"Blackbeard",
-			"Edward Thatch",
-			"Edward Teach"
-		],
-		"uniqueId": "d7c14116fd5f00d0f03c092f06417d39"
+		"ENCOUNTER_SAVED_STORAGE": {
+			"savedEncounters": {
+				"f599577b-90c8-4425-a4a9-59540b7318c1": {
+					"name": "Priates",
+					"data": {
+						"p": [
+							{
+								"count": 5,
+								"level": 6
+							}
+						],
+						"l": {
+							"items": [
+								{
+									"h": "bandit_mm",
+									"c": 5,
+									"customHashId": null
+								},
+								{
+									"h": "bandit%20captain_mm",
+									"c": 1,
+									"customHashId": null
+								},
+								{
+									"h": "berserker_mm",
+									"c": 1,
+									"customHashId": null
+								}
+							],
+							"sources": [
+								"MM"
+							]
+						},
+						"a": false
+					}
+				},
+				"d2fa31d2-f6a5-4dca-b0fc-d59d8bacb9e3": {
+					"name": "Temple Boss Fight",
+					"data": {
+						"p": [
+							{
+								"count": 4,
+								"level": 7
+							}
+						],
+						"l": {
+							"items": [
+								{
+									"h": "couatl_mm",
+									"c": 1,
+									"customHashId": null
+								},
+								{
+									"h": "werejaguar_tftyp",
+									"c": 1,
+									"customHashId": null
+								},
+								{
+									"h": "girallon_vgm",
+									"c": 1,
+									"customHashId": null
+								},
+								{
+									"h": "sahuagin%20wave%20shaper_gos",
+									"c": 1,
+									"customHashId": "sahuagin wave shaper_gos_4"
+								}
+							],
+							"sources": [
+								"MM",
+								"TftYP",
+								"VGM",
+								"GoS"
+							]
+						},
+						"a": false
+					}
+				}
+			},
+			"activeKey": null
+		},
+		"SUBLIST_RESIZE_bestiary.html": "249px",
+		"filterBoxState_items.html": {
+			"box": {
+				"meta": {
+					"modeCombineFilters": "and",
+					"isSummaryHidden": false,
+					"isBrewDefaultHidden": false
+				},
+				"minisHidden": {},
+				"combineAs": {}
+			},
+			"filters": {
+				"Source": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"AI": 1,
+						"BGDIA": 1,
+						"CoS": 1,
+						"DC": 1,
+						"DMG": 1,
+						"ERLW": 1,
+						"EET": 1,
+						"EGW": 1,
+						"GoS": 1,
+						"GGR": 1,
+						"HotDQ": 1,
+						"HftT": 1,
+						"IMR": 0,
+						"LLK": 0,
+						"LMoP": 1,
+						"MM": 1,
+						"MTF": 1,
+						"OotA": 1,
+						"PSX": 0,
+						"PHB": 1,
+						"PotA": 1,
+						"SDW": 1,
+						"SKT": 1,
+						"SCAG": 1,
+						"TftYP": 1,
+						"RMBRE": 1,
+						"RoT": 1,
+						"RoTOS": 1,
+						"TTP": 0,
+						"ToA": 1,
+						"UA2020SpellsAndMagicTattoos": 0,
+						"UAModernMagic": 0,
+						"VGM": 1,
+						"WDH": 1,
+						"WDMM": 1,
+						"UAWGE": 0,
+						"XGE": 1
+					},
+					"nestsHidden": {}
+				},
+				"Type": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"adventuring gear": 0,
+						"ammunition": 0,
+						"artisan's tools": 0,
+						"explosive": 0,
+						"firearm": 0,
+						"futuristic": 0,
+						"gaming set": 0,
+						"generic variant": 0,
+						"heavy armor": 0,
+						"instrument": 0,
+						"light armor": 0,
+						"martial weapon": 0,
+						"medium armor": 0,
+						"melee weapon": 0,
+						"modern": 0,
+						"mount": 0,
+						"other": 0,
+						"poison": 0,
+						"potion": 0,
+						"ranged weapon": 0,
+						"renaissance": 0,
+						"ring": 0,
+						"rod": 0,
+						"scroll": 0,
+						"shield": 0,
+						"simple weapon": 0,
+						"spellcasting focus": 0,
+						"staff": 0,
+						"tack and harness": 0,
+						"tattoo": 0,
+						"tools": 0,
+						"trade good": 0,
+						"treasure": 0,
+						"vehicle (air)": 0,
+						"vehicle (land)": 0,
+						"vehicle (water)": 0,
+						"wand": 0,
+						"wondrous item": 0
+					},
+					"nestsHidden": {}
+				},
+				"Tier": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"none": 0,
+						"minor": 0,
+						"major": 0
+					},
+					"nestsHidden": {}
+				},
+				"Rarity": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"none": 0,
+						"common": 0,
+						"uncommon": 0,
+						"rare": 0,
+						"very rare": 0,
+						"legendary": 0,
+						"artifact": 0,
+						"unknown": 0,
+						"unknown (magic)": 0,
+						"other": 0
+					},
+					"nestsHidden": {}
+				},
+				"Property": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"ammunition": 0,
+						"burst fire": 0,
+						"finesse": 0,
+						"heavy": 0,
+						"light": 0,
+						"loading": 0,
+						"reach": 0,
+						"reload": 0,
+						"special": 0,
+						"thrown": 0,
+						"two-handed": 0,
+						"versatile": 0
+					},
+					"nestsHidden": {}
+				},
+				"Attunement": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Yes": 0,
+						"By...": 0,
+						"Optional": 0,
+						"No": 0
+					},
+					"nestsHidden": {}
+				},
+				"Category": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Basic": 0,
+						"Generic Variant": 0,
+						"Specific Variant": 2,
+						"Other": 0
+					},
+					"nestsHidden": {}
+				},
+				"Cost": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 0,
+						"max": 100,
+						"curMin": 0,
+						"curMax": 100
+					}
+				},
+				"Spellcasting Focus": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Bard": 0,
+						"Cleric": 0,
+						"Druid": 0,
+						"Paladin": 0,
+						"Sorcerer": 0,
+						"Warlock": 0,
+						"Wizard": 0
+					},
+					"nestsHidden": {}
+				},
+				"Damage Type": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"B": 0,
+						"N": 0,
+						"O": 0,
+						"P": 0,
+						"R": 0,
+						"S": 0
+					},
+					"nestsHidden": {}
+				},
+				"Bonus": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Armor Class": 0,
+						"Saving Throws": 0,
+						"Spell Attacks": 0,
+						"Weapon Attack Rolls": 0,
+						"Weapon Attack and Damage Rolls": 0,
+						"Weapon Damage Rolls": 0
+					},
+					"nestsHidden": {}
+				},
+				"Miscellaneous": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Ability Score Adjustment": 0,
+						"Charges": 0,
+						"Cursed": 0,
+						"Item Group": 0,
+						"Magic": 0,
+						"Mundane": 0,
+						"SRD": 0,
+						"Sentient": 0
+					},
+					"nestsHidden": {}
+				},
+				"Found On": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Magic Item Table A": 0,
+						"Magic Item Table B": 0,
+						"Magic Item Table C": 0,
+						"Magic Item Table D": 0,
+						"Magic Item Table E": 0,
+						"Magic Item Table F": 0,
+						"Magic Item Table G": 0,
+						"Magic Item Table H": 0,
+						"Magic Item Table I": 0
+					},
+					"nestsHidden": {}
+				},
+				"Attached Spells": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"alter self": 0,
+						"animal friendship": 0,
+						"animal messenger": 0,
+						"animate dead": 0,
+						"antimagic field": 0,
+						"arcane lock": 0,
+						"augury": 0,
+						"awaken": 0,
+						"bane": 0,
+						"barkskin": 0,
+						"Bigby's hand": 0,
+						"bless": 0,
+						"blight": 0,
+						"branding smite": 0,
+						"burning hands": 0,
+						"call lightning": 0,
+						"chain lightning": 0,
+						"chaos bolt|XGE": 0,
+						"charm person": 0,
+						"circle of death": 0,
+						"clairvoyance": 0,
+						"cloudkill": 0,
+						"command": 0,
+						"compelled duel": 0,
+						"comprehend languages": 0,
+						"compulsion": 0,
+						"cone of cold": 0,
+						"confusion": 0,
+						"conjure animals": 0,
+						"conjure celestial": 0,
+						"conjure elemental": 0,
+						"conjure fey": 0,
+						"conjure minor elementals": 0,
+						"conjure woodland beings": 0,
+						"contact other plane": 0,
+						"control water": 0,
+						"control weather": 0,
+						"create or destroy water": 0,
+						"crown of madness": 0,
+						"crusader's mantle": 0,
+						"cure wounds": 0,
+						"dancing lights": 0,
+						"darkness": 0,
+						"daylight": 0,
+						"death ward": 0,
+						"demiplane": 0,
+						"detect evil and good": 0,
+						"detect magic": 0,
+						"detect poison and disease": 0,
+						"detect thoughts": 0,
+						"dimension door": 0,
+						"disguise self": 0,
+						"disintegrate": 0,
+						"dispel magic": 0,
+						"dissonant whispers": 0,
+						"divination": 0,
+						"divine word": 0,
+						"dominate beast": 0,
+						"dominate monster": 0,
+						"dominate person": 0,
+						"dream": 0,
+						"earthquake": 0,
+						"enlarge/reduce": 0,
+						"ensnaring strike": 0,
+						"entangle": 0,
+						"etherealness": 0,
+						"expeditious retreat": 0,
+						"eyebite": 0,
+						"fabricate": 0,
+						"faerie fire": 0,
+						"fear": 0,
+						"feather fall": 0,
+						"find traps": 0,
+						"finger of death": 0,
+						"fire storm": 0,
+						"fireball": 0,
+						"flaming sphere": 0,
+						"flesh to stone": 0,
+						"fly": 0,
+						"fog cloud": 0,
+						"fortune's favor|egw": 0,
+						"freedom of movement": 0,
+						"gaseous form": 0,
+						"gate": 0,
+						"giant insect": 0,
+						"globe of invulnerability": 0,
+						"goodberry": 0,
+						"gravity sinkhole|egw": 0,
+						"greater restoration": 0,
+						"guidance": 0,
+						"gust of wind": 0,
+						"hallucinatory terrain": 0,
+						"haste": 0,
+						"heal": 0,
+						"healing word": 0,
+						"heat metal": 0,
+						"hellish rebuke": 0,
+						"heroism": 0,
+						"hold monster": 0,
+						"hold person": 0,
+						"ice storm": 0,
+						"identify": 0,
+						"insect plague": 0,
+						"invisibility": 0,
+						"jump": 0,
+						"knock": 0,
+						"legend lore": 0,
+						"Leomund's secret chest": 0,
+						"lesser restoration": 0,
+						"levitate": 0,
+						"light": 0,
+						"lightning bolt": 0,
+						"locate animals or plants": 0,
+						"locate creature": 0,
+						"locate object": 0,
+						"longstrider": 0,
+						"mage armor": 0,
+						"mage hand": 0,
+						"magic missile": 0,
+						"major image": 0,
+						"mass cure wounds": 0,
+						"meld into stone": 0,
+						"mending": 0,
+						"message": 0,
+						"mislead": 0,
+						"misty step": 0,
+						"modify memory": 0,
+						"Mordenkainen's faithful hound": 0,
+						"nondetection": 0,
+						"Otiluke's freezing sphere": 0,
+						"pass without trace": 0,
+						"passwall": 0,
+						"phantasmal killer": 0,
+						"planar ally": 0,
+						"plane shift": 0,
+						"polymorph": 0,
+						"power word kill": 0,
+						"prestidigitation": 0,
+						"prismatic spray": 0,
+						"protection from energy": 0,
+						"protection from evil and good": 0,
+						"protection from poison": 0,
+						"pulse wave|egw": 0,
+						"raise dead": 0,
+						"ray of enfeeblement": 0,
+						"ray of frost": 0,
+						"remove curse": 0,
+						"resurrection": 0,
+						"scorching ray": 0,
+						"scrying": 0,
+						"see invisibility": 0,
+						"sending": 0,
+						"shatter": 0,
+						"shield": 0,
+						"shillelagh": 0,
+						"shocking grasp": 0,
+						"sleep": 0,
+						"sleet storm": 0,
+						"slow": 0,
+						"speak with animals": 0,
+						"speak with dead": 0,
+						"speak with plants": 0,
+						"spider climb": 0,
+						"spike growth": 0,
+						"stinking cloud": 0,
+						"stone shape": 0,
+						"stoneskin": 0,
+						"suggestion": 0,
+						"summon greater demon|XGE": 0,
+						"summon lesser demons|XGE": 0,
+						"sunbeam": 0,
+						"telekinesis": 0,
+						"teleport": 0,
+						"teleportation circle": 0,
+						"thunderwave": 0,
+						"transport via plants": 0,
+						"unseen servant": 0,
+						"wall of fire": 0,
+						"wall of force": 0,
+						"wall of ice": 0,
+						"wall of stone": 0,
+						"wall of thorns": 0,
+						"web": 0,
+						"wind walk": 0,
+						"wind wall": 0,
+						"wish": 0,
+						"word of recall": 0,
+						"zone of truth": 0
+					},
+					"nestsHidden": {}
+				}
+			}
+		},
+		"SUBLIST_RESIZE_items.html": "130px",
+		"filterBoxState_spells.html": {
+			"box": {
+				"meta": {
+					"modeCombineFilters": "and",
+					"isSummaryHidden": false,
+					"isBrewDefaultHidden": false
+				},
+				"minisHidden": {},
+				"combineAs": {}
+			},
+			"filters": {
+				"Source": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"AI": 1,
+						"ERLW": 1,
+						"EEPC": 1,
+						"EGW": 1,
+						"GGR": 1,
+						"Stream": 0,
+						"LLK": 0,
+						"PHB": 1,
+						"SCAG": 1,
+						"UA2020PsionicOptionsRevisited": 0,
+						"UA2020SpellsAndMagicTattoos": 0,
+						"UAArtificerRevisited": 0,
+						"UAFighterRogueWizard": 0,
+						"UAModernMagic": 0,
+						"UASorcererAndWarlock": 0,
+						"UAStarterSpells": 0,
+						"UAThatOldBlackMagic": 0,
+						"VGM": 1,
+						"UAWGE": 0,
+						"XGE": 1
+					},
+					"nestsHidden": {}
+				},
+				"Level": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"0": 0,
+						"1": 0,
+						"2": 0,
+						"3": 0,
+						"4": 0,
+						"5": 0,
+						"6": 0,
+						"7": 0,
+						"8": 0,
+						"9": 0
+					},
+					"nestsHidden": {}
+				},
+				"Classes": {
+					"meta": {
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"mode": "or"
+					}
+				},
+				"Class": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Artificer": 0,
+						"Artificer (UAA)": 0,
+						"Artificer (UAAR)": 0,
+						"Bard": 0,
+						"Cleric": 0,
+						"Druid": 0,
+						"Paladin": 0,
+						"Ranger": 0,
+						"Sorcerer": 0,
+						"Warlock": 0,
+						"Wizard": 0
+					},
+					"nestsHidden": {}
+				},
+				"Subclass": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Artificer (Revisited): Alchemist (UAAR)": 0,
+						"Artificer (Revisited): Archivist (UAAR)": 0,
+						"Artificer (Revisited): Artillerist (UAAR)": 0,
+						"Artificer (Revisited): Battle Smith (UAAR)": 0,
+						"Artificer: Alchemist": 0,
+						"Artificer: Armorer (UA2S3)": 0,
+						"Artificer: Artillerist": 0,
+						"Artificer: Battle Smith": 0,
+						"Barbarian: Ancestral Guardian": 0,
+						"Barbarian: Totem Warrior": 0,
+						"Cleric: Ambition (PSA)": 0,
+						"Cleric: Arcana": 0,
+						"Cleric: Beauty (Twitter)": 0,
+						"Cleric: City (UAMM)": 0,
+						"Cleric: Darkness (Twitter)": 0,
+						"Cleric: Death": 0,
+						"Cleric: Destruction (Twitter)": 0,
+						"Cleric: Forge": 0,
+						"Cleric: Forge (UACDD)": 0,
+						"Cleric: Grave": 0,
+						"Cleric: Grave (UACDD)": 0,
+						"Cleric: Knowledge": 0,
+						"Cleric: Knowledge (PSA)": 0,
+						"Cleric: Life": 0,
+						"Cleric: Light": 0,
+						"Cleric: Love (UA2S2)": 0,
+						"Cleric: Nature": 0,
+						"Cleric: Order": 0,
+						"Cleric: Order (UAOD)": 0,
+						"Cleric: Protection (UACDD)": 0,
+						"Cleric: Solidarity (PSA)": 0,
+						"Cleric: Strength (PSA)": 0,
+						"Cleric: Tempest": 0,
+						"Cleric: Trickery": 0,
+						"Cleric: Twilight (UACDW)": 0,
+						"Cleric: Unity (UA2S2)": 0,
+						"Cleric: War": 0,
+						"Cleric: Zeal (PSA)": 0,
+						"Druid: Land": 0,
+						"Druid: Spores": 0,
+						"Druid: Spores (UATSC)": 0,
+						"Druid: Wildfire (UACDW)": 0,
+						"Fighter: Arcane Archer": 0,
+						"Fighter: Eldritch Knight": 0,
+						"Fighter: Psychic Warrior (UAFRW)": 0,
+						"Paladin: Ancients": 0,
+						"Paladin: Conquest": 0,
+						"Paladin: Conquest (UAP)": 0,
+						"Paladin: Conquest v2 (UARCO)": 0,
+						"Paladin: Crown": 0,
+						"Paladin: Devotion": 0,
+						"Paladin: Oathbreaker": 0,
+						"Paladin: Redemption": 0,
+						"Paladin: Redemption (UAATOSC)": 0,
+						"Paladin: Treachery (UAP)": 0,
+						"Paladin: Vengeance": 0,
+						"Paladin: Watchers (UA2S1)": 0,
+						"Ranger (Revised): Deep Stalker Conclave (UATRR)": 0,
+						"Ranger (Revised): Fey Wanderer (UA2S3)": 0,
+						"Ranger (Revised): Gloom Stalker": 0,
+						"Ranger (Revised): Horizon Walker": 0,
+						"Ranger (Revised): Horizon Walker (UARAR)": 0,
+						"Ranger (Revised): Monster Slayer": 0,
+						"Ranger (Revised): Monster Slayer (UAATOSC)": 0,
+						"Ranger (Revised): Primeval Guardian (UARAR)": 0,
+						"Ranger (Revised): Swarmkeeper (UAFRR)": 0,
+						"Ranger: Deep Stalker (UALDU)": 0,
+						"Ranger: Fey Wanderer (UA2S3)": 0,
+						"Ranger: Gloom Stalker": 0,
+						"Ranger: Horizon Walker": 0,
+						"Ranger: Horizon Walker (UARAR)": 0,
+						"Ranger: Monster Slayer": 0,
+						"Ranger: Monster Slayer (UAATOSC)": 0,
+						"Ranger: Primeval Guardian (UARAR)": 0,
+						"Ranger: Swarmkeeper (UAFRR)": 0,
+						"Rogue: Arcane Trickster": 0,
+						"Sorcerer: Aberrant Mind (UASAW)": 0,
+						"Sorcerer: Clockwork Soul (UA2S2)": 0,
+						"Sorcerer: Divine Soul": 0,
+						"Sorcerer: Favored Soul v2 (UAS)": 0,
+						"Sorcerer: Favored Soul v3 (UARSC)": 0,
+						"Sorcerer: Giant Soul (UAGSS)": 0,
+						"Sorcerer: Stone (UAS)": 0,
+						"Warlock: Archfey": 0,
+						"Warlock: Celestial": 0,
+						"Warlock: Celestial (UARCO)": 0,
+						"Warlock: Fiend": 0,
+						"Warlock: Great Old One": 0,
+						"Warlock: Hexblade": 0,
+						"Warlock: Hexblade (UAWAW)": 0,
+						"Warlock: Kraken (Stream)": 0,
+						"Warlock: Lolth (Twitter)": 0,
+						"Warlock: Lurker in the Deep (UASAW)": 0,
+						"Warlock: Noble Genie (UA2S1)": 0,
+						"Warlock: Raven Queen (UAWAW)": 0,
+						"Warlock: Seeker (UATF)": 0,
+						"Warlock: Undying": 0,
+						"Warlock: Undying Light (UALDU)": 0,
+						"Wizard: Chronurgy": 0,
+						"Wizard: Graviturgy": 0,
+						"Wizard: Onomancy (UACDW)": 0,
+						"Wizard: Psionics (UAFRW)": 0
+					},
+					"nestsHidden": {
+						"Cleric": true,
+						"Fighter": true,
+						"Rogue": true,
+						"Sorcerer": true,
+						"Artificer (Revisited)": true,
+						"Barbarian": true,
+						"Druid": true,
+						"Paladin": true,
+						"Ranger": true,
+						"Ranger (Revised)": true,
+						"Warlock": true,
+						"Wizard": true,
+						"Artificer": true
+					}
+				},
+				"Variant Class": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Bard": 0,
+						"Cleric": 0,
+						"Druid": 0,
+						"Paladin": 0,
+						"Ranger": 0,
+						"Sorcerer": 0,
+						"Warlock": 0,
+						"Wizard": 0
+					},
+					"nestsHidden": {}
+				},
+				"Race": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Aasimar (DMG)": 0,
+						"Aasimar (Fallen)": 0,
+						"Aasimar (Protector)": 0,
+						"Aasimar (Scourge)": 0,
+						"Dwarf (Duergar)": 0,
+						"Dwarf (Mark of Warding)": 0,
+						"Elf (Drow)": 0,
+						"Elf (Eladrin) (UAEaG)": 0,
+						"Elf (Eladrin; DMG)": 0,
+						"Elf (High)": 0,
+						"Elf (Mark of Shadow)": 0,
+						"Elf (Shadar-kai) (UAESR)": 0,
+						"Elf (Zendikar) (Mul Daya Nation) (PSZ)": 0,
+						"Firbolg": 0,
+						"Genasi (Air)": 0,
+						"Genasi (Earth)": 0,
+						"Genasi (Fire)": 0,
+						"Genasi (Water)": 0,
+						"Gith (Githyanki)": 0,
+						"Gith (Githyanki) (UAEaG)": 0,
+						"Gith (Githzerai)": 0,
+						"Gith (Githzerai) (UAEaG)": 0,
+						"Gnome (Forest)": 0,
+						"Gnome (Mark of Scribing)": 0,
+						"Half-Elf (Drow Descent)": 0,
+						"Half-Elf (Mark of Detection)": 0,
+						"Half-Elf (Mark of Storm)": 0,
+						"Half-Orc (Mark of Finding)": 0,
+						"Halfling (Mark of Healing)": 0,
+						"Halfling (Mark of Hospitality)": 0,
+						"Human (Mark of Finding)": 0,
+						"Human (Mark of Handling)": 0,
+						"Human (Mark of Making)": 0,
+						"Human (Mark of Passage)": 0,
+						"Human (Mark of Sentinel)": 0,
+						"Siren (PSX)": 0,
+						"Tiefling": 0,
+						"Tiefling (Abyssal) (UAOBM)": 0,
+						"Tiefling (Asmodeus)": 0,
+						"Tiefling (Asmodeus) (UAFO)": 0,
+						"Tiefling (Baalzebul)": 0,
+						"Tiefling (Baalzebul) (UAFO)": 0,
+						"Tiefling (Dispater)": 0,
+						"Tiefling (Dispater) (UAFO)": 0,
+						"Tiefling (Fierna)": 0,
+						"Tiefling (Fierna) (UAFO)": 0,
+						"Tiefling (Glasya)": 0,
+						"Tiefling (Glasya) (UAFO)": 0,
+						"Tiefling (Levistus)": 0,
+						"Tiefling (Levistus) (UAFO)": 0,
+						"Tiefling (Mammon)": 0,
+						"Tiefling (Mammon) (UAFO)": 0,
+						"Tiefling (Mephistopheles)": 0,
+						"Tiefling (Mephistopheles) (UAFO)": 0,
+						"Tiefling (Variant)": 0,
+						"Tiefling (Zariel)": 0,
+						"Tiefling (Zariel) (UAFO)": 0,
+						"Triton": 0,
+						"Yuan-ti Pureblood": 0
+					},
+					"nestsHidden": {
+						"(No Subraces)": true,
+						"Aasimar": true,
+						"Dwarf": true,
+						"Elf": true,
+						"Elf (Zendikar)": true,
+						"Genasi": true,
+						"Gith": true,
+						"Gnome": true,
+						"Half-Elf": true,
+						"Half-Orc": true,
+						"Halfling": true,
+						"Human": true,
+						"Tiefling": true
+					}
+				},
+				"Background": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Azorius Functionary": 0,
+						"Boros Legionnaire": 0,
+						"Dimir Operative": 0,
+						"Golgari Agent": 0,
+						"Gruul Anarch": 0,
+						"Izzet Engineer": 0,
+						"Orzhov Representative": 0,
+						"Rakdos Cultist": 0,
+						"Selesnya Initiate": 0,
+						"Simic Scientist": 0
+					},
+					"nestsHidden": {}
+				},
+				"Components & Miscellaneous": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Concentration": 0,
+						"Verbal": 0,
+						"Somatic": 0,
+						"Material": 0,
+						"Royalty": 0,
+						"Material with Cost": 0,
+						"Material is Consumed": 0,
+						"Healing": 0,
+						"Requires Sight": 0,
+						"Permanent Effects": 0,
+						"Scaling Effects": 0,
+						"Summons Creature": 0,
+						"Ritual": 0,
+						"Technomagic": 0,
+						"SRD": 0
+					},
+					"nestsHidden": {}
+				},
+				"School": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"A": 0,
+						"C": 0,
+						"D": 0,
+						"E": 0,
+						"V": 0,
+						"I": 0,
+						"N": 0,
+						"P": 0,
+						"T": 0
+					},
+					"nestsHidden": {}
+				},
+				"Subschool": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {},
+					"nestsHidden": {}
+				},
+				"Damage Type": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"acid": 0,
+						"bludgeoning": 0,
+						"cold": 0,
+						"fire": 0,
+						"force": 0,
+						"lightning": 0,
+						"necrotic": 0,
+						"piercing": 0,
+						"poison": 0,
+						"psychic": 0,
+						"radiant": 0,
+						"slashing": 0,
+						"thunder": 0
+					},
+					"nestsHidden": {}
+				},
+				"Conditions Inflicted": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"blinded": 0,
+						"charmed": 0,
+						"deafened": 0,
+						"exhaustion": 0,
+						"frightened": 0,
+						"grappled": 0,
+						"incapacitated": 0,
+						"invisible": 0,
+						"paralyzed": 0,
+						"petrified": 0,
+						"poisoned": 0,
+						"prone": 0,
+						"restrained": 0,
+						"stunned": 0,
+						"unconscious": 0
+					},
+					"nestsHidden": {}
+				},
+				"Spell Attack": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"M": 0,
+						"R": 0,
+						"O": 0
+					},
+					"nestsHidden": {}
+				},
+				"Saving Throw": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"strength": 0,
+						"dexterity": 0,
+						"constitution": 0,
+						"intelligence": 0,
+						"wisdom": 0,
+						"charisma": 0
+					},
+					"nestsHidden": {}
+				},
+				"Opposed Ability Check": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"strength": 0,
+						"dexterity": 0,
+						"constitution": 0,
+						"intelligence": 0,
+						"wisdom": 0,
+						"charisma": 0
+					},
+					"nestsHidden": {}
+				},
+				"Cast Time": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"action": 0,
+						"bonus": 0,
+						"reaction": 0,
+						"round": 0,
+						"minute": 0,
+						"hour": 0
+					},
+					"nestsHidden": {}
+				},
+				"Duration": {
+					"meta": {
+						"isUseDropdowns": false,
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"min": 0,
+						"max": 8,
+						"curMin": 0,
+						"curMax": 8
+					}
+				},
+				"Range": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Self": 0,
+						"Touch": 0,
+						"Point": 0,
+						"Self (Area)": 0,
+						"Special": 0
+					},
+					"nestsHidden": {}
+				},
+				"Area Style": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"ST": 0,
+						"MT": 0,
+						"R": 0,
+						"N": 0,
+						"C": 0,
+						"Y": 0,
+						"H": 0,
+						"L": 0,
+						"S": 0,
+						"Q": 0,
+						"W": 0
+					},
+					"nestsHidden": {}
+				}
+			}
+		},
+		"SUBLIST_RESIZE_spells.html": "326px",
+		"filterBoxState_classes.html": {
+			"box": {
+				"meta": {
+					"modeCombineFilters": "and",
+					"isSummaryHidden": false,
+					"isBrewDefaultHidden": false
+				},
+				"minisHidden": {},
+				"combineAs": {}
+			},
+			"filters": {
+				"Source": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Core": 0,
+						"Others": 0,
+						"Sidekicks": 0,
+						"UAArtificer": 0,
+						"UAClassFeatureVariants": 0,
+						"UAArtificerRevisited": 0,
+						"ERLW": 0,
+						"PHB": 0,
+						"XGE": 0,
+						"SCAG": 0,
+						"UABarbarianPrimalPaths": 0,
+						"UARevisedSubclasses": 0,
+						"UABarbarianAndMonk": 0,
+						"UA2020SubclassesPt1": 0,
+						"UABardBardColleges": 0,
+						"UAKitsOfOld": 0,
+						"UABardAndPaladin": 0,
+						"UAModernMagic": 0,
+						"DMG": 0,
+						"PSA": 0,
+						"UAClericDivineDomains": 0,
+						"UAOrderDomain": 0,
+						"Twitter": 0,
+						"GGR": 0,
+						"UAClericDruidWizard": 0,
+						"UADruid": 0,
+						"UARevisedClassOptions": 0,
+						"UAThreeSubclasses": 0,
+						"UALightDarkUnderdark": 0,
+						"UAWaterborneAdventures": 0,
+						"UAGothicHeroes": 0,
+						"UAFighter": 0,
+						"Stream": 0,
+						"UAFighterRangerRogue": 0,
+						"UAFighterRogueWizard": 0,
+						"UAMonk": 0,
+						"UAATrioOfSubclasses": 0,
+						"UATheMysticClass": 0,
+						"UAPaladin": 0,
+						"UARangerAndRogue": 0,
+						"UATheRangerRevised": 0,
+						"UAModifyingClasses": 0,
+						"UASidekicks": 0,
+						"UASorcerer": 0,
+						"PSK": 0,
+						"UAGiantSoulSorcerer": 0,
+						"UASorcererAndWarlock": 0,
+						"UATheFaithful": 0,
+						"UAWarlockAndWizard": 0,
+						"UAEberron": 0,
+						"UAWizardRevisited": 0,
+						"UA2020SubclassesPt2": 0,
+						"UA2020SubclassesPt3": 0,
+						"EGW": 0,
+						"UA2020PsionicOptionsRevisited": 0
+					},
+					"nestsHidden": {}
+				},
+				"Miscellaneous": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Reprinted": 2,
+						"SRD": 0
+					},
+					"nestsHidden": {}
+				}
+			}
+		},
+		"filterBoxState_feats.html": {
+			"box": {
+				"meta": {
+					"modeCombineFilters": "and",
+					"isSummaryHidden": false,
+					"isBrewDefaultHidden": false
+				},
+				"minisHidden": {},
+				"combineAs": {}
+			},
+			"filters": {
+				"Source": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"UAFeatsForRaces": 1,
+						"UAFeatsForSkills": 1,
+						"UAFeats": 1,
+						"PHB": 1,
+						"UAEberron": 1,
+						"MTF": 1,
+						"PSK": 1,
+						"XGE": 1,
+						"PSX": 1,
+						"UAWGE": 1,
+						"ERLW": 1,
+						"UAFighterRogueWizard": 1,
+						"UA2020PsionicOptionsRevisited": 1
+					},
+					"nestsHidden": {}
+				},
+				"Ability Bonus": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"str": 1,
+						"dex": 1,
+						"con": 1,
+						"int": 1,
+						"wis": 1,
+						"cha": 1
+					},
+					"nestsHidden": {}
+				},
+				"Prerequisite": {
+					"meta": {
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"mode": "or"
+					}
+				},
+				"Other": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Ability": 0,
+						"Race": 0,
+						"Psionics": 0,
+						"Proficiency": 0,
+						"Special": 0,
+						"Spellcasting": 0
+					},
+					"nestsHidden": {}
+				},
+				"Level": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Level 8": 0
+					},
+					"nestsHidden": {}
+				},
+				"Miscellaneous": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"SRD": 0
+					},
+					"nestsHidden": {}
+				}
+			}
+		},
+		"SUBLIST_RESIZE_feats.html": "130px",
+		"filterBoxState_backgrounds.html": {
+			"box": {
+				"meta": {
+					"modeCombineFilters": "and",
+					"isSummaryHidden": false,
+					"isBrewDefaultHidden": false
+				},
+				"minisHidden": {},
+				"combineAs": {}
+			},
+			"filters": {
+				"Source": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false
+					},
+					"state": {
+						"PHB": 1,
+						"ToA": 0,
+						"ALCurseOfStrahd": 0,
+						"ALElementalEvil": 0,
+						"SCAG": 0,
+						"ALRageOfDemons": 0,
+						"PSA": 0,
+						"CoS": 0,
+						"UAWGE": 0,
+						"PSI": 0,
+						"GGR": 0,
+						"GoS": 0,
+						"AI": 0,
+						"BGDIA": 0,
+						"ERLW": 0
+					},
+					"nestsHidden": {}
+				},
+				"Skill Proficiencies": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false
+					},
+					"state": {
+						"insight": 0,
+						"religion": 0,
+						"history": 0,
+						"survival": 0,
+						"deception": 0,
+						"animal handling": 0,
+						"sleight of hand": 0,
+						"athletics": 0,
+						"arcana": 0,
+						"nature": 0,
+						"persuasion": 0,
+						"stealth": 0,
+						"intimidation": 0,
+						"acrobatics": 0,
+						"performance": 0,
+						"investigation": 0,
+						"medicine": 0,
+						"perception": 0
+					},
+					"nestsHidden": {}
+				},
+				"Tool Proficiencies": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false
+					},
+					"state": {
+						"navigator's tools": 0,
+						"cartographer's tools": 0,
+						"disguise kit": 0,
+						"artisan's tools": 0,
+						"gaming set": 0,
+						"vehicles (land)": 0,
+						"forgery kit": 0,
+						"thieves' tools": 0,
+						"vehicles (water)": 0,
+						"musical instrument": 0,
+						"alchemist's supplies": 0,
+						"herbalism kit": 0,
+						"tinker's tools": 0,
+						"brewer's supplies": 0,
+						"cook's utensils": 0,
+						"vehicles (air)": 0,
+						"calligrapher's supplies": 0,
+						"poisoner's kit": 0,
+						"carpenter's tools": 0
+					},
+					"nestsHidden": {}
+				},
+				"Language Proficiencies": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false
+					},
+					"state": {
+						"anyStandard": 0,
+						"dwarvish": 0,
+						"draconic": 0,
+						"undercommon": 0,
+						"abyssal": 0,
+						"celestial": 0,
+						"deep speech": 0,
+						"infernal": 0,
+						"primordial": 0,
+						"sylvan": 0,
+						"other": 0,
+						"giant": 0,
+						"elvish": 0,
+						"goblin": 0
+					},
+					"nestsHidden": {}
+				}
+			}
+		},
+		"SUBLIST_RESIZE_backgrounds.html": "130px",
+		"filterBoxState_races.html": {
+			"box": {
+				"meta": {
+					"modeCombineFilters": "and",
+					"isSummaryHidden": false,
+					"isBrewDefaultHidden": false
+				},
+				"minisHidden": {},
+				"combineAs": {}
+			},
+			"filters": {
+				"Source": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"EEPC": 1,
+						"PHB": 1,
+						"DMG": 1,
+						"UAEladrinAndGith": 0,
+						"UAElfSubraces": 0,
+						"MTF": 1,
+						"UAWGE": 0,
+						"ERLW": 1,
+						"PSZ": 0,
+						"PSK": 0,
+						"SCAG": 1,
+						"VGM": 1,
+						"PSD": 0,
+						"UAEberron": 0,
+						"UAThatOldBlackMagic": 0,
+						"UAFiendishOptions": 0,
+						"GGR": 1,
+						"UAGothicHeroes": 0,
+						"UAWaterborneAdventures": 0,
+						"UARacesOfRavnica": 0,
+						"PSI": 0,
+						"PSA": 0,
+						"TTP": 0,
+						"OGA": 0,
+						"PSX": 0,
+						"UACentaursMinotaurs": 0,
+						"UARacesOfEberron": 0,
+						"AI": 1,
+						"LR": 0,
+						"EGW": 1,
+						"AWM": 0
+					},
+					"nestsHidden": {}
+				},
+				"Ability Bonus (Including Subrace)": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Player Choice": 0,
+						"Any Strength Increase": 0,
+						"Any Dexterity Increase": 0,
+						"Any Constitution Increase": 0,
+						"Any Intelligence Increase": 0,
+						"Any Wisdom Increase": 0,
+						"Any Charisma Increase": 0,
+						"Strength +2": 0,
+						"Strength +1": 0,
+						"Dexterity +2": 0,
+						"Dexterity +1": 0,
+						"Constitution +2": 0,
+						"Constitution +1": 0,
+						"Intelligence +2": 0,
+						"Intelligence +1": 0,
+						"Wisdom +2": 0,
+						"Wisdom +1": 0,
+						"Charisma +2": 0,
+						"Charisma +1": 0,
+						"Strength -2": 0,
+						"Intelligence -2": 0,
+						"Charisma -2": 0,
+						"Intelligence -4": 0,
+						"Charisma -4": 0,
+						"Intelligence -6": 0,
+						"Wisdom -4": 0,
+						"Strength -4": 0
+					},
+					"nestsHidden": {}
+				},
+				"Size": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"M": 0,
+						"S": 0,
+						"V": 0
+					},
+					"nestsHidden": {}
+				},
+				"Speed": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Climb": 0,
+						"Fly": 0,
+						"Swim": 0,
+						"Walk (Fast)": 0,
+						"Walk": 0,
+						"Walk (Slow)": 0
+					},
+					"nestsHidden": {}
+				},
+				"Traits": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Amphibious": 0,
+						"Armor Proficiency": 0,
+						"Blindsight": 0,
+						"Damage Immunity": 0,
+						"Damage Resistance": 0,
+						"Darkvision": 0,
+						"Superior Darkvision": 0,
+						"Dragonmark": 0,
+						"Improved Resting": 0,
+						"Monstrous Race": 0,
+						"Natural Armor": 0,
+						"NPC Race": 2,
+						"Powerful Build": 0,
+						"Skill Proficiency": 0,
+						"Spellcasting": 0,
+						"Tool Proficiency": 0,
+						"Unarmed Strike": 0,
+						"Uncommon Race": 0,
+						"Weapon Proficiency": 0
+					},
+					"nestsHidden": {}
+				},
+				"Languages": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Abyssal": 0,
+						"Celestial": 0,
+						"Choose": 0,
+						"Common": 0,
+						"Draconic": 0,
+						"Dwarvish": 0,
+						"Elvish": 0,
+						"Giant": 0,
+						"Gnomish": 0,
+						"Goblin": 0,
+						"Halfling": 0,
+						"Infernal": 0,
+						"Orc": 0,
+						"Other": 0,
+						"Primordial": 0,
+						"Sylvan": 0,
+						"Undercommon": 0
+					},
+					"nestsHidden": {}
+				},
+				"Base Race": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Genasi": 0,
+						"Elf": 0,
+						"Elf (Zendikar)": 0,
+						"Elf (Kaladesh)": 0,
+						"Gnome": 0,
+						"Half-Elf": 0,
+						"Half-Orc": 0,
+						"Dwarf": 0,
+						"Human": 0,
+						"Halfling": 0,
+						"Shifter": 0,
+						"Tiefling": 0,
+						"Bugbear": 0,
+						"Aasimar": 0,
+						"Goblin": 0,
+						"Hobgoblin": 0,
+						"Orc": 0,
+						"Merfolk (Zendikar)": 0,
+						"Goblin (Zendikar)": 0,
+						"Vedalken": 0,
+						"Human (Innistrad)": 0,
+						"Aven": 0,
+						"Gith": 0,
+						"Merfolk (Ixalan)": 0,
+						"Warforged": 0,
+						"Dragonborn": 0,
+						"Half-Elf (Variant)": 0
+					},
+					"nestsHidden": {}
+				},
+				"Miscellaneous": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"Base Race": 0,
+						"Modified Copy": 0,
+						"SRD": 0
+					},
+					"nestsHidden": {}
+				}
+			}
+		},
+		"SUBLIST_RESIZE_races.html": "130px",
+		"filterBoxState_optionalfeatures.html": {
+			"box": {
+				"meta": {
+					"modeCombineFilters": "and",
+					"isSummaryHidden": false,
+					"isBrewDefaultHidden": false
+				},
+				"minisHidden": {},
+				"combineAs": {}
+			},
+			"filters": {
+				"Source": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false
+					},
+					"state": {
+						"PHB": 1,
+						"UAModernMagic": 0,
+						"UARevisedClassOptions": 0,
+						"UAWarlockAndWizard": 0,
+						"XGE": 1,
+						"UALightDarkUnderdark": 0,
+						"UAWaterborneAdventures": 0,
+						"UAFighter": 0,
+						"UARevisedSubclasses": 0,
+						"UATheFaithful": 0,
+						"UAArtificerRevisited": 0,
+						"GoS": 1,
+						"BGDIA": 1,
+						"UAClericDruidWizard": 0,
+						"UAFighterRangerRogue": 0,
+						"UAArtificer": 0,
+						"UAClassFeatureVariants": 0,
+						"ERLW": 1
+					},
+					"nestsHidden": {}
+				},
+				"Feature Type": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false
+					},
+					"state": {
+						"AI": 0,
+						"ED": 0,
+						"EI": 0,
+						"MM": 0,
+						"MV": 0,
+						"MV:B": 0,
+						"OTH": 0,
+						"FS:F": 0,
+						"FS:B": 0,
+						"FS:P": 0,
+						"FS:R": 0,
+						"PB": 0,
+						"MV:C2-UA": 0,
+						"AS:V1-UA": 0,
+						"AS:V2-UA": 0,
+						"AS": 0,
+						"SHP:H": 0,
+						"SHP:M": 0,
+						"SHP:W": 0,
+						"SHP:F": 0,
+						"SHP:O": 0,
+						"IWM:W": 0,
+						"IWM:A": 0,
+						"IWM:G": 0,
+						"OR": 0,
+						"RN": 0,
+						"AF": 0
+					},
+					"nestsHidden": {}
+				},
+				"Prerequisite": {
+					"meta": {
+						"isHidden": false
+					},
+					"state": {
+						"mode": "or"
+					}
+				},
+				"Pact Boon": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false
+					},
+					"state": {
+						"Blade": 0,
+						"Chain": 0,
+						"Tome": 0,
+						"Talisman": 0
+					},
+					"nestsHidden": {}
+				},
+				"Otherworldly Patron": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false
+					},
+					"state": {
+						"The Archfey": 0,
+						"The Fiend": 0,
+						"The Great Old One": 0,
+						"The Hexblade": 0,
+						"The Kraken": 0,
+						"The Raven Queen": 0,
+						"The Seeker": 0
+					},
+					"nestsHidden": {}
+				},
+				"Spell": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false
+					},
+					"state": {
+						"eldritch blast": 0,
+						"hex/curse": 0
+					},
+					"nestsHidden": {}
+				},
+				"Level": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false
+					},
+					"state": {
+						"Warlock Level 9": 0,
+						"Warlock Level 7": 0,
+						"Warlock Level 15": 0,
+						"Warlock Level 5": 0,
+						"Warlock Level 12": 0,
+						"Warlock Level 18": 0,
+						"Monk (Four Elements) Level 17": 0,
+						"Monk (Four Elements) Level 6": 0,
+						"Monk (Four Elements) Level 11": 0,
+						"Artificer (Revisited) Level 4": 0,
+						"Artificer (Revisited) Level 8": 0,
+						"Artificer Level 6": 0
+					},
+					"nestsHidden": {
+						"Artificer": true,
+						"Artificer (Revisited)": true,
+						"Monk": true,
+						"Warlock": true
+					}
+				},
+				"Feature": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false
+					},
+					"state": {},
+					"nestsHidden": {}
+				}
+			}
+		},
+		"SUBLIST_RESIZE_optionalfeatures.html": "130px",
+		"sublist_bestiary.html": {
+			"items": [
+				{
+					"h": "yuan-ti%20malison%20(type%201)_mm",
+					"c": 3,
+					"customHashId": null
+				},
+				{
+					"h": "yuan-ti%20pureblood_mm",
+					"c": 6,
+					"customHashId": null
+				}
+			],
+			"sources": [
+				"MM"
+			]
+		},
+		"ENCOUNTER_STORAGE": {
+			"p": [
+				{
+					"count": 4,
+					"level": 7
+				}
+			],
+			"l": {
+				"items": [
+					{
+						"h": "yuan-ti%20malison%20(type%201)_mm",
+						"c": 3,
+						"customHashId": null
+					},
+					{
+						"h": "yuan-ti%20pureblood_mm",
+						"c": 6,
+						"customHashId": null
+					}
+				],
+				"sources": [
+					"MM"
+				]
+			},
+			"a": false
+		},
+		"filterBoxState_trapshazards.html": {
+			"box": {
+				"meta": {
+					"modeCombineFilters": "and",
+					"isSummaryHidden": false,
+					"isBrewDefaultHidden": false
+				},
+				"minisHidden": {},
+				"combineAs": {}
+			},
+			"filters": {
+				"Source": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"DMG": 1,
+						"XGE": 1,
+						"VGM": 1
+					},
+					"nestsHidden": {}
+				},
+				"Type": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"MECH": 0,
+						"MAG": 0,
+						"SMPL": 0,
+						"CMPX": 0,
+						"HAZ": 0,
+						"WTH": 0,
+						"ENV": 0,
+						"WLD": 0,
+						"GEN": 0
+					},
+					"nestsHidden": {}
+				}
+			}
+		},
+		"SUBLIST_RESIZE_trapshazards.html": "130px",
+		"sublist_spells.html": {
+			"items": [
+				{
+					"h": "fire%20bolt_phb"
+				},
+				{
+					"h": "mage%20hand_phb"
+				},
+				{
+					"h": "minor%20illusion_phb"
+				},
+				{
+					"h": "acid%20splash_phb"
+				},
+				{
+					"h": "shape%20water_xge"
+				},
+				{
+					"h": "shield_phb"
+				},
+				{
+					"h": "magic%20missile_phb"
+				},
+				{
+					"h": "enhance%20ability_phb"
+				},
+				{
+					"h": "fireball_phb"
+				},
+				{
+					"h": "polymorph_phb"
+				},
+				{
+					"h": "misty%20step_phb"
+				},
+				{
+					"h": "comprehend%20languages_phb"
+				},
+				{
+					"h": "haste_phb"
+				}
+			],
+			"sources": [
+				"PHB",
+				"XGE"
+			]
+		},
+		"filterBoxState_conditionsdiseases.html": {
+			"box": {
+				"meta": {
+					"modeCombineFilters": "and",
+					"isSummaryHidden": false,
+					"isBrewDefaultHidden": false
+				},
+				"minisHidden": {},
+				"combineAs": {}
+			},
+			"filters": {
+				"Source": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"PHB": 1,
+						"GoS": 1,
+						"DMG": 1,
+						"ToA": 1
+					},
+					"nestsHidden": {}
+				},
+				"Type": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"condition": 0,
+						"disease": 2
+					},
+					"nestsHidden": {}
+				},
+				"Miscellaneous": {
+					"meta": {
+						"combineBlue": "or",
+						"combineRed": "or",
+						"isHidden": false,
+						"isMobileHeaderHidden": true
+					},
+					"state": {
+						"SRD": 0
+					},
+					"nestsHidden": {}
+				}
+			}
+		},
+		"SUBLIST_RESIZE_conditionsdiseases.html": "130px",
+		"converterState_converter.html": {
+			"state": {
+				"hasAppended": false,
+				"converter": "Creature",
+				"sourceJson": "",
+				"inputSeparator": "===",
+				"availableSources": []
+			},
+			"Creature": {
+				"state": {
+					"mode": "txt",
+					"page": 0,
+					"isTitleCase": false,
+					"source": ""
+				}
+			},
+			"Item": {
+				"state": {
+					"mode": "txt",
+					"page": 0,
+					"isTitleCase": false,
+					"source": ""
+				}
+			},
+			"Spell": {
+				"state": {
+					"mode": "txt",
+					"page": 0,
+					"isTitleCase": false,
+					"source": ""
+				}
+			},
+			"Table": {
+				"state": {
+					"mode": "html"
+				}
+			}
+		},
+		"brewbuilderSettings_makebrew.html": {
+			"activeBuilder": "creatureBuilder",
+			"activeSource": "TalesoftheCaribbean"
+		},
+		"brewbuilderState_makebrew.html": {
+			"builders": {
+				"creatureBuilder": {
+					"s": {
+						"name": "Captain Blackheart",
+						"size": "M",
+						"type": "humanoid",
+						"source": "TalesoftheCaribbean",
+						"alignment": [
+							"L",
+							"E"
+						],
+						"ac": [
+							12,
+							{
+								"ac": 15,
+								"condition": "with mage armor",
+								"braces": true
+							}
+						],
+						"hp": {
+							"formula": "14d8 + 28",
+							"average": 91
+						},
+						"speed": {
+							"walk": 30,
+							"swim": 15
+						},
+						"str": 16,
+						"dex": 14,
+						"con": 15,
+						"int": 12,
+						"wis": 12,
+						"cha": 18,
+						"passive": 11,
+						"cr": "6",
+						"shortName": "Blackheart",
+						"languages": [
+							"Common",
+							"French"
+						],
+						"languageTags": [
+							"C"
+						],
+						"save": {
+							"wis": "+4",
+							"cha": "+7"
+						},
+						"skill": {
+							"arcana": "+4",
+							"history": "+4"
+						},
+						"resist": [
+							"psychic"
+						],
+						"spellcasting": [
+							{
+								"name": "Innate Spellcasting",
+								"headerEntries": [
+									"Blackheart's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save {@dc 15}), requiring no material components:"
+								],
+								"will": [
+									"{@spell detect magic|PHB}",
+									"{@spell jump|PHB}",
+									"{@spell levitate|PHB}",
+									"{@spell mage armor|PHB} (self only)"
+								],
+								"daily": {
+									"1e": [
+										"{@spell arcane gate|PHB}",
+										"{@spell speak with dead|PHB}",
+										"{@spell true seeing|PHB}"
+									]
+								},
+								"ability": "cha",
+								"type": "spellcasting"
+							},
+							{
+								"name": "Spellcasting",
+								"headerEntries": [
+									"Blackheart is a 14th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). He regains his expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+								],
+								"spells": {
+									"0": {
+										"spells": [
+											"{@spell chill touch|PHB}",
+											"{@spell eldritch blast|PHB}",
+											"{@spell guidance|PHB}",
+											"{@spell mage hand|PHB}",
+											"{@spell minor illusion|PHB}",
+											"{@spell prestidigitation|PHB}",
+											"{@spell shocking grasp|PHB}"
+										]
+									},
+									"5": {
+										"spells": [
+											"{@spell armor of Agathys|PHB}",
+											"{@spell arms of Hadar|PHB}",
+											"{@spell clairvoyance|PHB}",
+											"{@spell contact other plane|PHB}",
+											"{@spell crown of madness|PHB}",
+											"{@spell detect thoughts|PHB}",
+											"{@spell dimension door|PHB}",
+											"{@spell dissonant whispers|PHB}",
+											"{@spell dominate beast|PHB}",
+											"{@spell telekinesis|PHB}",
+											"{@spell vampiric touch|PHB}"
+										],
+										"slots": 3,
+										"lower": 1
+									}
+								},
+								"ability": "cha",
+								"type": "spellcasting"
+							}
+						],
+						"spellcastingTags": [
+							"I",
+							"CL"
+						],
+						"trait": [
+							{
+								"name": "Whispering Aura",
+								"entries": [
+									"At the start of each of Blackheart's turns, each creature of its choice within 5 feet of it must succeed on a {@dc 15} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage, provided that Blackheart isn't {@condition incapacitated}."
+								]
+							}
+						],
+						"damageTags": [
+							"S",
+							"P",
+							"Y"
+						],
+						"isNamedCreature": true,
+						"reaction": [
+							{
+								"name": "Shape Up, Ye Dog (2/Day)",
+								"entries": [
+									"Whenever a friendly creature within 30 feet of Blackheart that can hear it misses with an attack, Blackheart can yell perilous threats to allow that creature to reroll the attack roll."
+								]
+							}
+						],
+						"action": [
+							{
+								"name": "Multiattack",
+								"entries": [
+									"The captain makes two attacks: one with his flintlock pistol and one with its scimitar."
+								]
+							},
+							{
+								"name": "Scimitar",
+								"entries": [
+									"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 6}) slashing damage."
+								]
+							},
+							{
+								"name": "Flintlock Pistol (Reload 1)",
+								"entries": [
+									"{@atk rw} {@hit 5} to hit, range 15/60 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+								]
+							}
+						],
+						"actionTags": [
+							"Multiattack"
+						],
+						"miscTags": [
+							"MW",
+							"RW"
+						],
+						"tokenUrl": "https://i.imgur.com/YBs2HDN.png",
+						"fluff": {
+							"entries": [
+								"\"Angus Skyme came to the Spanish Main in the brig of HMSÂ Prudence. He escaped the gallows and gathered the roughest crew in the Caribbean. Blackheart shows no quarter to his victims or crew, and he has killed many of both for his amusement and profit. He still bears the scar from the duel he fought with Jack Hawkins over Lady Arcadia de Sol, and he still nurses the grudge that goes with it.\"",
+								"Known to use torture and other unspeakable acts to acquire gold, Blackheart is considered by many to be no better than the Cursed. Still, he is pirate through and through, only too willing to inflict a little bloodshed to guarantee respect.",
+								"Some say that Blackheart has already sold his soul to the demons of the sea. Others say that he fights them like he has fought everyone else: to his death or theirs.",
+								"Now that Blackheart has carved out an empire based on fear and terror, he can concentrate on his biggest goal: destroying the other pirates of the Spanish Main, starting with Jack Hawkins and his accursed monkey.",
+								"â€œNow tell me,â€ Blackheart said, his voice a low growl barely audible above the creaking in the shipâ€™s hold. â€œTell me where you buried De La Cruzâ€™ gold.â€",
+								"â€œNever!â€ Sunderland yelled, not quite believing his own feeble reply.",
+								"Blackheart shook his shaggy head, and beneath his grizzled beard cracked a smile like a broken dinner plate. He picked up a small chest and placed it on the barrel next to Sunderland, opening it so that the prone Englishman could see its contents. Blackheart extracted a pair of wicked metal implements with seemingly unnecessary blades and teeth.",
+								"â€œI think yeâ€™ll change your mind,â€ Blackheart said. Sunderlandâ€™s screams tore through the night, startling the men on watch who looked at each other nervously. Each time the shrieking began again, the helmsman took a drink of rum. An hour later, when Blackheart emerged from the hold, the helmsman could barely stand.",
+								"â€œHereâ€™s yer new heading,â€ Blackheart said, dropping a rough map on the deck, drawn in blood on a torn bandage. â€œMake for that island as if Hell itself were on yer heels.â€"
+							],
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/osUyW3V.jpg"
+									}
+								}
+							]
+						},
+						"environment": [
+							"coastal"
+						],
+						"group": "Pirates",
+						"isNpc": true,
+						"alias": [
+							"Blackbeard",
+							"Edward Thatch",
+							"Edward Teach"
+						],
+						"_pTypes": {
+							"type": "humanoid",
+							"tags": [],
+							"asText": "humanoid"
+						},
+						"_pCr": "6"
+					},
+					"m": {
+						"profSave": {
+							"wis": 1,
+							"cha": 1
+						},
+						"profSkill": {
+							"arcana": 1,
+							"history": 1
+						},
+						"autoCalc": {
+							"proficiency": true,
+							"passivePerception": true,
+							"hpAverageSimple": false,
+							"hpModifier": true
+						},
+						"activeTab__input": 0,
+						"activeTab__output": 0,
+						"profBonus": 3,
+						"ixBrew": 0
+					},
+					"_m": {
+						"isEntrySaved": true
+					}
+				},
+				"spellBuilder": {
+					"s": {
+						"name": "New Spell",
+						"level": 1,
+						"school": "A",
+						"time": [
+							{
+								"number": 1,
+								"unit": "action"
+							}
+						],
+						"range": {
+							"type": "point",
+							"distance": {
+								"type": "self"
+							}
+						},
+						"duration": [
+							{
+								"type": "instant"
+							}
+						],
+						"classes": {
+							"fromClassList": [
+								{
+									"name": "Wizard",
+									"source": "PHB"
+								}
+							]
+						},
+						"entries": [],
+						"source": ""
+					},
+					"m": {},
+					"_m": {
+						"isEntrySaved": true
+					}
+				}
+			}
+		},
+		"HOMEBREW_STORAGE": {
+			"monster": [
+				{
+					"name": "Captain Blackheart",
+					"size": "M",
+					"type": "humanoid",
+					"source": "TalesoftheCaribbean",
+					"alignment": [
+						"L",
+						"E"
+					],
+					"ac": [
+						12,
+						{
+							"ac": 15,
+							"condition": "with mage armor",
+							"braces": true
+						}
+					],
+					"hp": {
+						"formula": "14d8 + 28",
+						"average": 91
+					},
+					"speed": {
+						"walk": 30,
+						"swim": 15
+					},
+					"str": 16,
+					"dex": 14,
+					"con": 15,
+					"int": 12,
+					"wis": 12,
+					"cha": 18,
+					"passive": 11,
+					"cr": "6",
+					"shortName": "Blackheartumanoid\", \t\"source\": \"TalesoftheCaribbean\", \t\"alignment\": [ \t\t\"L\", \t\t\"E\" \t], \t\"ac\": [ \t\t12, \t\t{",
+					"languages": [
+						"Common",
+						"French"
+					],
+					"languageTags": [
+						"C"
+					],
+					"save": {
+						"wis": "+4",
+						"cha": "+7"
+					},
+					"skill": {
+						"arcana": "+4",
+						"history": "+4"
+					},
+					"resist": [
+						"psychic"
+					],
+					"spellcasting": [
+						{
+							"name": "Innate Spellcasting",
+							"headerEntries": [
+								"Blackheart's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save {@dc 15}), requiring no material components:"
+							],
+							"will": [
+								"{@spell detect magic|PHB}",
+								"{@spell jump|PHB}",
+								"{@spell levitate|PHB}",
+								"{@spell mage armor|PHB} (self only)"
+							],
+							"daily": {
+								"1e": [
+									"{@spell arcane gate|PHB}",
+									"{@spell speak with dead|PHB}",
+									"{@spell true seeing|PHB}"
+								]
+							},
+							"ability": "cha",
+							"type": "spellcasting"
+						},
+						{
+							"name": "Spellcasting",
+							"headerEntries": [
+								"Blackheart is a 14th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). He regains his expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+							],
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell chill touch|PHB}",
+										"{@spell eldritch blast|PHB}",
+										"{@spell guidance|PHB}",
+										"{@spell mage hand|PHB}",
+										"{@spell minor illusion|PHB}",
+										"{@spell prestidigitation|PHB}",
+										"{@spell shocking grasp|PHB}"
+									]
+								},
+								"5": {
+									"spells": [
+										"{@spell armor of Agathys|PHB}",
+										"{@spell arms of Hadar|PHB}",
+										"{@spell clairvoyance|PHB}",
+										"{@spell contact other plane|PHB}",
+										"{@spell crown of madness|PHB}",
+										"{@spell detect thoughts|PHB}",
+										"{@spell dimension door|PHB}",
+										"{@spell dissonant whispers|PHB}",
+										"{@spell dominate beast|PHB}",
+										"{@spell telekinesis|PHB}",
+										"{@spell vampiric touch|PHB}"
+									],
+									"slots": 3,
+									"lower": 1
+								}
+							},
+							"ability": "cha",
+							"type": "spellcasting"
+						}
+					],
+					"spellcastingTags": [
+						"I",
+						"CL"
+					],
+					"trait": [
+						{
+							"name": "Whispering Aura",
+							"entries": [
+								"At the start of each of Blackheart's turns, each creature of its choice within 5 feet of it must succeed on a {@dc 15} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage, provided that Blackheart isn't {@condition incapacitated}."
+							]
+						}
+					],
+					"damageTags": [
+						"S",
+						"P",
+						"Y"
+					],
+					"isNamedCreature": true,
+					"reaction": [
+						{
+							"name": "Shape Up, Ye Dog (2/Day)",
+							"entries": [
+								"Whenever a friendly creature within 30 feet of Blackheart that can hear it misses with an attack, Blackheart can yell perilous threats to allow that creature to reroll the attack roll."
+							]
+						}
+					],
+					"action": [
+						{
+							"name": "Multiattack",
+							"entries": [
+								"The captain makes two attacks: one with his flintlock pistol and one with its scimitar."
+							]
+						},
+						{
+							"name": "Scimitar",
+							"entries": [
+								"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 6}) slashing damage."
+							]
+						},
+						{
+							"name": "Flintlock Pistol (Reload 1)",
+							"entries": [
+								"{@atk rw} {@hit 5} to hit, range 15/60 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+							]
+						}
+					],
+					"actionTags": [
+						"Multiattack"
+					],
+					"miscTags": [
+						"MW",
+						"RW"
+					],
+					"tokenUrl": "https://i.imgur.com/YBs2HDN.png",
+					"fluff": {
+						"entries": [
+							"\"Angus Skyme came to the Spanish Main in the brig of HMSÂ Prudence. He escaped the gallows and gathered the roughest crew in the Caribbean. Blackheart shows no quarter to his victims or crew, and he has killed many of both for his amusement and profit. He still bears the scar from the duel he fought with Jack Hawkins over Lady Arcadia de Sol, and he still nurses the grudge that goes with it.\"",
+							"Known to use torture and other unspeakable acts to acquire gold, Blackheart is considered by many to be no better than the Cursed. Still, he is pirate through and through, only too willing to inflict a little bloodshed to guarantee respect.",
+							"Some say that Blackheart has already sold his soul to the demons of the sea. Others say that he fights them like he has fought everyone else: to his death or theirs.",
+							"Now that Blackheart has carved out an empire based on fear and terror, he can concentrate on his biggest goal: destroying the other pirates of the Spanish Main, starting with Jack Hawkins and his accursed monkey.",
+							"â€œNow tell me,â€ Blackheart said, his voice a low growl barely audible above the creaking in the shipâ€™s hold. â€œTell me where you buried De La Cruzâ€™ gold.â€",
+							"â€œNever!â€ Sunderland yelled, not quite believing his own feeble reply.",
+							"Blackheart shook his shaggy head, and beneath his grizzled beard cracked a smile like a broken dinner plate. He picked up a small chest and placed it on the barrel next to Sunderland, opening it so that the prone Englishman could see its contents. Blackheart extracted a pair of wicked metal implements with seemingly unnecessary blades and teeth.",
+							"â€œI think yeâ€™ll change your mind,â€ Blackheart said. Sunderlandâ€™s screams tore through the night, startling the men on watch who looked at each other nervously. Each time the shrieking began again, the helmsman took a drink of rum. An hour later, when Blackheart emerged from the hold, the helmsman could barely stand.",
+							"â€œHereâ€™s yer new heading,â€ Blackheart said, dropping a rough map on the deck, drawn in blood on a torn bandage. â€œMake for that island as if Hell itself were on yer heels.â€"
+						],
+						"images": [
+							{
+								"type": "image",
+								"href": {
+									"type": "external",
+									"url": "https://i.imgur.com/osUyW3V.jpg"
+								}
+							}
+						]
+					},
+					"environment": [
+						"coastal"
+					],
+					"group": "Pirates",
+					"isNpc": true,
+					"alias": [
+						"Blackbeard",
+						"Edward Thatch",
+						"Edward Teach"
+					],
+					"uniqueId": "d7c14116fd5f00d0f03c092f06417d39"
+				}
+			]
 		}
-	]
+	}
 }
