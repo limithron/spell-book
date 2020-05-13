@@ -17,6 +17,7 @@
 		]
 	},
 "monster": [
+{
 	"name": "Great Orc",
 	"size": "M",
 	"type": {
@@ -148,5 +149,6 @@
 	},
 	"tokenUrl": "https://i.imgur.com/FJVIdtb.png",
 	"uniqueId": "f982ee47b6de01950995a3ab98983617"
+	}
 	]
 }
