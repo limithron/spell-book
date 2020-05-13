@@ -1,4 +1,21 @@
 {
+	"_meta": {
+		"sources": [
+			{
+				"json": "AiME",
+				"abbreviation": "AiME",
+				"full": "Adventures in Middle-Earth",
+				"color": "802F00",
+				"authors": [				
+					"Cubicle 7"
+				],
+				"convertedBy": [
+					"Gandalf Guy"
+				],
+				"url": "https://www.cubicle7games.com/our-games/adventures-in-middle-earth/"
+			}
+		]
+	},
 	"name": "Great Orc",
 	"size": "M",
 	"type": {
