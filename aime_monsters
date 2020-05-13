@@ -1,0 +1,133 @@
+{
+	"name": "Great Orc",
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"Orc"
+		]
+	},
+	"source": "AiME",
+	"alignment": [
+		"A"
+	],
+	"ac": [
+		{
+			"ac": 16,
+			"from": [
+				"scale mail"
+			]
+		}
+	],
+	"hp": {
+		"formula": "10d8 + 40",
+		"average": 85
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 18,
+	"dex": 14,
+	"con": 18,
+	"int": 10,
+	"wis": 14,
+	"cha": 12,
+	"passive": 12,
+	"cr": "4",
+	"languages": [
+		"Westron",
+		"Orkish"
+	],
+	"save": {
+		"str": "+7",
+		"con": "+7",
+		"wis": "+5"
+	},
+	"skill": {
+		"intimidation": "+4"
+	},
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"senseTags": [
+		"D"
+	],
+	"trait": [
+		{
+			"name": "Aggressive",
+			"entries": [
+				"As a bonus action, the Great Orc can move up to its speed toward a hostile creature that it can see."
+			]
+		},
+		{
+			"name": "Sunlight Sensitivity",
+			"entries": [
+				"While in sunlight, the Great Orc has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+			]
+		}
+	],
+	"traitTags": [
+		"Aggressive",
+		"Sunlight Sensitivity"
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The Great Orc makes two attacks with its heavy scimitar, orc-axe, or spear."
+			]
+		},
+		{
+			"name": "Heavy Scimitar",
+			"entries": [
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+			]
+		},
+		{
+			"name": "Orc-Axe",
+			"entries": [
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage."
+			]
+		},
+		{
+			"name": "Spear",
+			"entries": [
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 4}) piercing damage in melee, or 8 ({@damage 1d8 + 4}) piercing damage if used in a two-handed melee attack."
+			]
+		},
+		{
+			"name": "Leadership",
+			"entries": [
+				"(Recharges after a short or long rest). When using Leadership as an action, for 1 minute, the Great Orc can utter a roar of encouragement whenever a non-hostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a {@dice d4} to its roll provided it can hear and   nderstand the Great Orc. A creature can benefit from only one Leadership die at a time. This effect ends if the Great Orc is {@condition incapacitated}."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"damageTags": [
+		"S",
+		"P"
+	],
+	"miscTags": [
+		"MW",
+		"RW",
+		"THW"
+	],
+	"fluff": {
+		"entries": [
+			"Great Orcs are a powerful breed of Orc often encountered as leaders and chieftains of their weaker-blooded relatives. Legends hint at the possibility that they descend from servant spirits that once took an Orcish shape to serve the Dark Power’s purposes. King Golfimbul, the Great Goblin, Azog and his son Bolg were Great Orcs."
+		],
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://i.imgur.com/FJVIdtb.png"
+				}
+			}
+		]
+	},
+	"tokenUrl": "https://i.imgur.com/FJVIdtb.png",
+	"uniqueId": "f982ee47b6de01950995a3ab98983617"
+}
