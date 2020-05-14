@@ -14,8 +14,8 @@
 				]
 			}
 		],
-		"dateAdded": 1589392971,
-		"dateLastModified": 1589392971
+		"dateAdded": 1589496357,
+		"dateLastModified": 1589496357
 	},
 	"monster": [
 		{
@@ -3390,6 +3390,1787 @@
 				"Stunned"
 			],
 			"uniqueId": "9c29ea449ebdb477657b3fdf08602905"
+		},
+		{
+			"name": "Ruthless Bandit",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"Leather Corslet"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 0",
+				"average": 18
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 11,
+			"int": 10,
+			"wis": 11,
+			"cha": 8,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Westron"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Coward",
+					"entries": [
+						"When injured, the Bandit suffers Disadvantage on all combat rolls"
+					]
+				},
+				{
+					"name": "No Quarter",
+					"entries": [
+						"When the Bandit reduces an enemy to 0 hit points that enemy is considered to already have failed on death save."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Short Sword",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Short Bow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/t1SIlP7.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/t1SIlP7.png",
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"uniqueId": "992b55cca9a8e368345e62399c3535b7"
+		},
+		{
+			"name": "Amos, Less Stone-Troll",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d10 + 18",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 8,
+			"wis": 7,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Westron",
+				"Orcish"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Sunlight Curse",
+					"entries": [
+						"Stone-trolls become {@condition Petrified} and turn into stone if they are touched by the bright light of the sun. In direct sunlight, a Stone-troll must make a {@dc 10} Dexterity saving throw at the beginning of its turn in order to find enough cover to avoid being turned to stone. On a failure, the Stone-troll becomes {@condition Petrified}. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spiked Troll-club",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					"Stone-Trolls live in small groups in filthy caves strewn with the remains of unwary travellers. They seem to be more intelligent than other Troll types, maybe thanks to their habit of prowling in the proximity of populated areas. Their appearance, while always frightful, is made less monstrous by their tendency to wear simple clothes, cook their food and use tools like drinking jugs and barrels.",
+					"A very ancient breed, Stone-Trolls owe their name to the fact that they turn to stone if exposed to the light of the Sun."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/kxXlGpU.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/kxXlGpU.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "a4098e8a78a3c33394cdecbbcb2126db"
+		},
+		{
+			"name": "Ettin Guardian",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 9,
+					"from": [
+						"unarmored"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 84",
+				"average": 161
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 23,
+			"int": 6,
+			"wis": 10,
+			"cha": 4,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				}
+			],
+			"languages": [
+				"Westron",
+				"Orcish"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Horrible Strength",
+					"entries": [
+						"If the Ettin makes a successful melee attack, it may use its bonus action to cause 5 additional damage of the same type to the target."
+					]
+				},
+				{
+					"name": "Two-headed",
+					"entries": [
+						"Ettins with two heads are much harder to catch unawares. Any attempts at Stealth are made with Disadvantage and the Ettin gains Advantage on both active and passive Perception checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Crushing Blow",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Seize Victim {@recharge 5}",
+					"entries": [
+						"The Ettin may choose to spend an action grabbing a creature within 5 feet of them. The target is automatically {@condition Grappled} if it is of Medium size or smaller. To escape the Troll’s grasp, the target must use an action to escape: they must succeed on a {@dc 15} Strength (Athletics) or Dexterity (Acrobatics). If the creature fails, it takes 5 bludgeoning damage and remains {@condition Grappled}. An Ettin can seize a number of victims up to the number of hands that it possesses, but cannot use Crushing Blow if it does not have a free hand."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/3l6dBtB.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/3l6dBtB.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"Grappled"
+			],
+			"uniqueId": "96ea729fb2bb8cb5c7652c9e7ae81394"
+		},
+		{
+			"name": "Olog-hai Captain",
+			"shortName": "Captain",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"close-fitting mesh"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d10 + 99",
+				"average": 159
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 13,
+			"con": 28,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"intimidation": "+6",
+				"perception": "+5",
+				"survival": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Westron",
+				"Orcish",
+				"Black Speech"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Hideous Toughness (Recharge after a short or long rest)",
+					"entries": [
+						"The captain can endure enormous damage. By spending an action reciting words of power in the Black Speech, the Captain gains a pool of 10 ({@dice 3d6}) temporary hit points that last till the end of the fight if not removed by combat damage"
+					]
+				},
+				{
+					"name": "Horrible Strength",
+					"entries": [
+						"If the captain makes a successful melee attack, it may use its bonus action to cause 7 additional damage of the same type to the target."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Captain makes three attacks: two with its notched blade and one with its claw."
+					]
+				},
+				{
+					"name": "Notched Sword",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) slashing damage (heavy two-handed weapon)."
+					]
+				},
+				{
+					"name": "Jagged Claw",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d4 + 7}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Fearsome {@recharge 5-6}",
+					"entries": [
+						"The Captain may use its reaction when it is struck by an enemy to activate this ability. That enemy must make a {@dc 15} Wisdom saving throw. If it fails the saving throw the attack fails and it becomes {@condition Frightened} of the Captain until the end of the Captain’s next turn."
+					]
+				},
+				{
+					"name": "Parry",
+					"entries": [
+						"The Captain adds +4 to its AC against one melee attack that would hit it. To do so, the creature must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Mormog is a member of a new troll-race, bred by Sauron himself in recent years, in preparation for his great war. They are called Olog-hai in the Black Speech, and are stronger and faster than most of the older races."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ZpQ1tct.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/ZpQ1tct.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "7cbbf24b93646ad52149ee31bd53599f"
+		},
+		{
+			"name": "Chieftain",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"corselet of mail"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 0",
+				"average": 27
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 10,
+			"con": 12,
+			"int": 13,
+			"wis": 14,
+			"cha": 14,
+			"skill": {
+				"perception": "+5",
+				"insight": "+5"
+			},
+			"passive": 15,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Commanding",
+					"entries": [
+						"Allies of the chieftain gain advantage on attack rolls against enemies engaged with the chieftain."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Riddle (INT)",
+					"entries": [
+						"{@hit 5}"
+					]
+				},
+				{
+					"name": "Broad Sword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The leader of a village or tribe of Men – one of Beorn’s followers, perhaps, or a Woodman chief, or the Master of one of the new settlements that have arisen around Dale. Is the chieftain old, or did they win the trust of their followers through great deeds? Do they rule wisely or foolishly? Is their reign marked by peace, or by trouble? In any case, they likely mistrust strangers from distant lands, but will welcome their kinsfolk or those known to them, and offer shelter from the wild.",
+					"Motivation: Preserve her people’s fortunes",
+					"Expectations:",
+					"• This land is ours; the bones of our ancestors are buried here. None shall take it from us. +2 if the Player-heroes warn of a threat to the settlement.",
+					"• Strangers must show respect to our ways. +1 if the Player-heroes display respect.",
+					"• Everyone just does what they must to survive. -1 if the Player-heroes confirm the chieftain’s natural mistrust and pessimism.",
+					"• I reject your trickery! -2 if the chieftain discovers the Player-heroes are lying. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/8c84dg7.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/8c84dg7.png",
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "7a5dd82f34f99cd633e550d60599792c"
+		},
+		{
+			"name": "Town Guard",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 0",
+				"average": 9
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 10,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 11,
+			"skill": {
+				"perception": "+2",
+				"religion": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Raise the alarm",
+					"entries": [
+						"A town guard who has not yet attacked in this combat has 5 temporary hit points. These hit points are lost as soon as the town guard attacks or one of the town guards raises the alarm."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Few towns in Wilderland are large enough to have a formal guard, but even a small village might have a gatekeeper or night watchman. The role of the guard is to deal with troublemakers and nuisances, and in time of danger, to sound the alarm and hold the door until help arrives.",
+					"Motivation: Protect the gate",
+					"Expectations:",
+					"• A coin or two is always welcome. +2 if the Playerheroes offer a bribe and aren’t otherwise dangerous.",
+					"• Weapons by the door. +1 if the Player-heroes agree to leave their weapons in the guard’s keeping.",
+					"• Blame always falls on those that deserve it least. -1 if the gatekeeper fears something strange is afoot that will end up causing trouble for him.",
+					"• Unexpected travellers are an annoyance, and sometimes are dangerous. -2 if the Player-heroes appear dangerous or threatening."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Wyau6DZ.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Wyau6DZ.png",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/255/guard.mp3",
+			"altArt": [
+				{
+					"name": "Vistana Guard",
+					"source": "CoS"
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "23ab5362109dd61eb8278be04c273df4"
+		},
+		{
+			"name": "Merchant",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "2d8 + 0",
+				"average": 9
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 13,
+			"con": 13,
+			"int": 11,
+			"wis": 11,
+			"cha": 14,
+			"skill": {
+				"religion": "+2",
+				"persuasion": "+4"
+			},
+			"passive": 10,
+			"cr": "1/8",
+			"action": [
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Before the death of the dragon, the only merchants regularly encountered on the Road were Dwarves, exiled from their ancestral halls and reduced to being tin-smiths and traders. Now that there is a king in Dale again and the Beornings guard the crossings of the River and the Mountains, there are more traders risking the Wild again. Toys from Dale, wine from Dorwinion, weapons and tools from the forges under the Mountain, furs and hide from the hills – there is a fortune to be made by merchants brave enough to travel and canny enough to get a good deal. A merchant always has a smile and a friendly word for a fellow traveller – or is that smile plastered on to fool an unwary mark?",
+					"Motivation: To make a fortune",
+					"Expectations:",
+					"• Almost everybody else is a fool to be cheated. +2 if the Player-heroes agree to buy from the merchant.",
+					"• Wealth is a sign of worthiness. +1 if the Player-heroes have any Prosperous or Rich characters in their Company. ",
+					"• Beware of those who are not fools. -1 if the Playerheroes prove worryingly insightful.",
+					"• Begone, beggars! -2 if all the Player-heroes have a Martial or lower standard of living."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/6pMvkVD.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/6pMvkVD.png",
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "c6521fa8a6c72f16ebe9610b9ddfd869"
+		},
+		{
+			"name": "Messenger",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"leather corselet"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 14,
+			"int": 10,
+			"wis": 14,
+			"cha": 11,
+			"skill": {
+				"religion": "+2",
+				"survival": "+4",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Well-Travelled",
+					"entries": [
+						"The messenger has advantage on all Survival tests related to travelling along the Road or in familiar lands. This advantage is lost if the messenger is trying to reach an unfamiliar destination."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Short Sword",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The only way for news to travel in Middle-earth is for someone to bring it. Usually, news travels slowly, carried by merchants or wandering Dwarves or other wanderers on the Road, trading gossip from the far side of WIlderland for a spot by the fire and a crust of bread. Certain messages, though, are urgent, and must be carried by a courier. Such swift travellers criss-cross the ways of Middle-earth, carrying letters or secret messages on behalf of their masters.",
+					"Motivation: Bring the message to its recipient",
+					"Expectations:",
+					"• News from afar. +2 if the Player-heroes bring interesting information.",
+					"• It’s good to have company on the road, but they must not slow you down. +1 if the Player-heroes offer protection and company.",
+					"• Those who refuse to share news have something to hide. -1 if the Player-heroes refuse to speak of themselves.",
+					"• There’s always peril in the wild, and it is best to avoid confronting it. -2 if the Player-heroes advocate leaving the Road or doing something dangerous"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/9GMwVlU.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/9GMwVlU.png",
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "1c5d1c6eff6a1b0330e9628c927c9aa9"
+		},
+		{
+			"name": "Farmer",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"hide armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 0",
+				"average": 9
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 14,
+			"cha": 11,
+			"skill": {
+				"nature": "+4"
+			},
+			"passive": 12,
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Call the Dogs",
+					"entries": [
+						"Once per battle, the farmer may whistle for his dogs, calling {@dice 1d4} Mastiffs to aid him."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Small farmsteads support most of the folk of Wilderland. These farmsteads might be clustered together near a village, like Bree-land, or they might be isolated farmsteads like Beorn’s house, out in the Wilderness and beholden to no lord or master. A farmer might have a dozen neighbours, or there might not be another living soul within a hundred leagues. In either case, a farmer’s home is a good place to find shelter in the wild – assuming he does not set his dogs on trespassers!",
+					"Motivation: Mind your own business.",
+					"Expectations:",
+					"• There’s evil in the world. +2 if the Player-heroes prove they have recently struck a blow against the Shadow by slaying Orcs, Wargs or other such foes. ",
+					"• Things will get worse; dig in for a long winter. +1 if the Player-heroes honestly ask for help. ",
+					"• Strangers are suspect. -1 if the Player-heroes include at least one Unknown culture. ",
+					"• A man is a king under his own roof, no matter how humble it is. -2 if the Player-heroes are disrespectful"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/AxyMMdg.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/AxyMMdg.png",
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "5052da6de3875dae9718c77c8fb7ea26"
+		},
+		{
+			"name": "Warrior",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 11,
+			"skill": {
+				"intimidation": "+2",
+				"religion": "+2"
+			},
+			"passive": 10,
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Warrior's Charge",
+					"entries": [
+						"The warrior gains advantage on all attacks made in the first round of combat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The warrior makes two attacks with its axe."
+					]
+				},
+				{
+					"name": "Axe",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Though some fortunate lands have been left in peace for long years (or shielded from woe by the Rangers and other unseen friends), most of Middle-earth is a perilous place. Orcs and worse things lurk in the mountains and the dark woods, and there are outlaws and cruel men aplenty. Sometimes, it is necessary to set axe to flesh instead of wood, and to take shelter behind a warrior’s shield. This particular warrior is typical of most warriors of the North, the sort that might be found in the Vales of Anduin or in the vanguard of the armies of Dale. Only a few warriors – those in the service of wealthy kings, or Dwarf-Lords – can afford heavy armour and weapons. Most make do with axes and lighter protection."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/anZWvn8.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/anZWvn8.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "02dec0f484873a922485ef0369cf06aa"
+		},
+		{
+			"name": "Sage",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "2d8 + 0",
+				"average": 9
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 6,
+			"dex": 10,
+			"con": 10,
+			"int": 16,
+			"wis": 14,
+			"cha": 13,
+			"skill": {
+				"arcana": "+5",
+				"religion": "+5"
+			},
+			"passive": 12,
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Cunning Speech",
+					"entries": [
+						"If the sage has a chance to speak, then any intelligent foes within earshot must make a Wisdom saving throw (DC13) or suffer disadvantage when attacking the sage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d6 - 1}) damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Sages remember the old lore of their people, and advise kings and chieftains on what to do. A sage might be wise, like Elrond, or puffed-up with ego and foolish pride, like the herb-master of Gondor, or even malicious and deceitful, like Wormtongue.",
+					"Learning is a mark of wisdom, but it is not the only one, and a fellow may know all the lore of the world and still not be counted among the Wise. While the lore of elder days is preserved only in places like Rivendell and Gondor, each of the Free Peoples have their own sages and scholars.",
+					"The Woodmen know secrets of herb-lore and wood-lore, the Dwarves have no equal when it comes to smithing and building, and even the Shire-Hobbits have great expertise in certain obscure branches of scholarship.",
+					"Motivation: Accumulate lore, so that one may know the",
+					"correct thing to do.",
+					"Expectations:",
+					"• Most people are simple-minded and lack perspective. Speak only to the Wise. If none here are among the Wise, speak to yourself. +2 if the Player-heroes demonstrate a mastery of lore. ",
+					"• Debate is the fire in which knowledge is forged. +1 if the Player-heroes argue openly and are not hidebound by custom and propriety. ",
+					"• Only the lessons of the past matter. The present age is a fallen one, and there is little or nothing to learn from it. -1 if the Player-heroes focus on current events. ",
+					"• Violence is the last refuge of fools. -2 if the Playerheroes try intimidation."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/93GH2ko.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/93GH2ko.png",
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "c48807f5514327bd22d2841bf57afe33"
+		},
+		{
+			"name": "Singer",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "2d8 + 0",
+				"average": 9
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 12,
+			"int": 13,
+			"wis": 11,
+			"cha": 15,
+			"skill": {
+				"religion": "+3",
+				"arcana": "+3",
+				"performance": "+4"
+			},
+			"passive": 10,
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Inspiring Song",
+					"entries": [
+						"Once per combat, the singer may grant a Singer’s Inspiration die ({@dice d6}) to one ally. That ally may roll that {@dice d6} and add the result to an attack roll or saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dager",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"All folk in Middle-earth delight in singing. A singer might make merry in an inn, leading the company in a lively dance or drinking-song, or sing a lament for the fallen, or beat the drum on a march to war, or recall long-lost memories and forgotten secrets that have been preserved in old lays. Songs have power and meaning in Middleearth; Loremasters might use singers and their songs to foreshadow events to come or to underline the importance of a place or concept. Motivation: Entertain and earn a coin or two.",
+					"Expectations:",
+					"• To raise spirits. +2 if the Player-heroes are inspired or especially interested in the song.",
+					"• To have an attentive and appreciative audience. +1 if the Player-heroes appreciate the song."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/4C4p1Jj.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/4C4p1Jj.png",
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "6e9560ed8f28ac8d4f4e302600f17130"
+		},
+		{
+			"name": "Thug",
+			"source": "AiME",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 4",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 8,
+			"cha": 8,
+			"skill": {
+				"intimidation": "+1"
+			},
+			"passive": 9,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Coward",
+					"entries": [
+						"A thug attempts to flee if reduced to 5 or fewer hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Thugs and thieves like this are opportunists, preying on the weak and vulnerable. They are not servants of the Shadow by any means – they are simply greedy and cruel. Their ilk lurks around the alleyways of Lake-town and Dale, and even Gondor. Anywhere there is coin to be made from mugging passers-by, these folk can be found."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/LV37RVz.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/LV37RVz.png",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/487/thug.mp3",
+			"altArt": [
+				{
+					"name": "Vistana Thug",
+					"source": "CoS"
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "d6a2a121b720c3a0054fa5f88de6e966"
+		},
+		{
+			"name": "Outlaw Chief",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item hide armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 13,
+			"con": 15,
+			"int": 13,
+			"wis": 13,
+			"cha": 14,
+			"skill": {
+				"survival": "+5",
+				"stealth": "+5",
+				"intimidation": "+6"
+			},
+			"passive": 11,
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Ambush",
+					"entries": [
+						"During their first turn, the outlaw chief has advantage on attack rolls against any creature that hasn’t taken a turn. If the outlaw chief scores a melee critical hit on a target in this turn, that target is knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The outlaw chief makes two spear attacks."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Bow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}4 ({@damage 1d6}) damage."
+					]
+				},
+				{
+					"name": "Volley",
+					"entries": [
+						"The outlaw chief makes a bow attack, and any outlaws who make a bow attack this round have advantage on their attacks."
+					]
+				},
+				{
+					"name": "Terrorise",
+					"entries": [
+						"The outlaw chief targets up to three intelligent creatures they can see within 30 feet. If there are more outlaws present than targets of this ability, then those targets must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} until the end of the outlaw chief’s next turn."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Outlaws lie in wait along the Road, in greater numbers now that there is more traffic and trade to be robbed. They make their lairs in Northern Mirkwood, in the Grey Mountains, along the river running, and – despite the watchful Beornings – near the  crossings of the Anduin."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/F085OZ2.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/F085OZ2.png",
+			"traitTags": [
+				"Ambusher"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"uniqueId": "9e6fe805dbfdbb9a1ed5af7b6c2faa21"
+		},
+		{
+			"name": "Outlaw",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item hide armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 13,
+			"con": 13,
+			"int": 10,
+			"wis": 11,
+			"cha": 11,
+			"skill": {
+				"survival": "+4",
+				"stealth": "+4",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Ambush",
+					"entries": [
+						"During its first turn, the outlaw has advantage on attack rolls against any creature that hasn’t taken a turn. If the outlaw scores a melee critical hit on a target in this turn, that target is knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The outlaw makes two spear attacks."
+					]
+				},
+				{
+					"name": "Bow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}4 ({@damage 1d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Outlaws lie in wait along the Road, in greater numbers now that there is more traffic and trade to be robbed. They make their lairs in Northern Mirkwood, in the Grey Mountains, along the river Running, and – despite the watchful Beornings – near the crossings of the Anduin."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/t1SIlP7.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/t1SIlP7.png",
+			"traitTags": [
+				"Ambusher"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"uniqueId": "3311a4b237aaa681838ba062ff5cc200"
+		},
+		{
+			"name": "Ragner",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"leather corselet"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 0",
+				"average": 72
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 16,
+			"int": 12,
+			"wis": 16,
+			"cha": 11,
+			"save": {
+				"str": "+7",
+				"con": "+8"
+			},
+			"skill": {
+				"history": "+6",
+				"survival": "+8",
+				"stealth": "+6"
+			},
+			"senses": [
+				"passive Perception in the Wild 23"
+			],
+			"passive": 18,
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Endurance of the Dúnedain",
+					"entries": [
+						"The Ranger may continue to act normally for one round after being reduced to 0 hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ranger makes a sword and knife attack, or two bow attacks."
+					]
+				},
+				{
+					"name": "Long Sword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Knife",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Bow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Númenórean Arrow",
+					"entries": [
+						"Instead of making a normal bow attack, the Ranger may fire a Númenórean arrow. Ranged Weapon Attack: {@hit 6} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target has disadvantage on all attack rolls next turn."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The Rangers guard Rivendell and the North from the depredations of the Enemy, and patrol the boundaries of the vanished kingdom of Arnor. At times, too, they cross over the Misty Mountains to travel through Wilderland and the south. They disguise themselves and their lordly heritage, appearing as nothing more than weather-beaten nomads and vagabonds.",
+					"Motivation: Defend the Free People against the Enemy.",
+					"Expectations:",
+					"• The Rangers remember. +2 if the Player-heroes have visited Rivendell, include Rangers or High Elves among their number, or have the blessing of a Wizard."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/QsdHTua.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/QsdHTua.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"uniqueId": "a43a769ff06bf1b3e5d08e65340e331d"
+		},
+		{
+			"name": "Elf",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"leather corslet"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 12,
+			"int": 12,
+			"wis": 14,
+			"cha": 13,
+			"skill": {
+				"stealth": "+5",
+				"arcana": "+4",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Westron",
+				"Sindarin",
+				"Quenya",
+				"and/or Silvan"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Shadow Bane",
+					"entries": [
+						"The Elf gains a +1 bonus to attacks against servants of the Shadow."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Sword",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage."
+					]
+				},
+				{
+					"name": "Bow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 80/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Elves still linger in Middle-earth in a few blessed places. Those of Mirkwood are mostly Elves of the Twilight – they never visited the Blessed Realm in the far west, but they are stalwart foes of the Shadow. The days of their greatness are behind them; now, they fade, and in their fading become more childlike and wayward, concerned only with their own amusements and distractions."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Ph8YbXx.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Ph8YbXx.png",
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"uniqueId": "63d532f2eaacb1738d7d8cc0f3c49d66"
+		},
+		{
+			"name": "Elf-Lord",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 15,
+			"int": 16,
+			"wis": 15,
+			"cha": 15,
+			"save": {
+				"dex": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"arcana": "+6",
+				"religion": "+7",
+				"persuasion": "+6",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"Westron",
+				"Sindarin",
+				"Quenya",
+				"and/or Silvan"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Stargazer",
+					"entries": [
+						"The Elf-Lord’s ancient wisdom and insight aids her when dealing with impatient mortals. Wisdom (Insight) checks to discern the Elf- Lord’s thoughts have disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bitter Spear",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. On a critical hit, the Elf-Lord deals an additional {@damage 2d6} damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"This is not one of the great Elf-Lords like Galadriel or Elrond, nor any one of their households like Glorfindel or Celeborn. This is a lesser Elf-Lord, the leader of a travelling company of Elves or a courtier or emissary in the Woodland Realm.",
+					"Like the rest of his kin, the Elf-Lord has seen many hundreds of years roll by in Middle-earth, and knows that the Shadow always returns. In time, the Elf-Lord knows, he must go to the Havens and seek the safety of the Blessed Realm across the sea where the Shadow cannot go, but he loves the forests of Middle-earth too much to leave so soon.",
+					"Motivation: Protect the Woodland Realm or the travelling company from all threats.",
+					"Expectations:",
+					"• Remember old friendships. +2 if the Player-heroes remind the Elf-Lord of ancient alliances between the Elves and the other Free Peoples.",
+					"• Flattery works wonders. +1 if the Player-heroes appeal to the Elf-Lord’s ego.",
+					"• Courtesy will be met with courtesy. -1 if the Playerheroes insult the Elf-Lord.",
+					"• The forest is ours. -2 if the Player-heroes have hunted, trespassed or damaged the trees in the Elf- Lord’s domain."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/GriP9XJ.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/GriP9XJ.png",
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "d5fb3deb4c7443bda2e2e65e1b7e336a"
+		},
+		{
+			"name": "Dwarf",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item ring mail|phb}",
+						"great shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 13,
+			"dex": 10,
+			"con": 14,
+			"int": 13,
+			"wis": 8,
+			"cha": 8,
+			"skill": {
+				"athletics": "+3",
+				"survival": "+1"
+			},
+			"passive": 9,
+			"languages": [
+				"Westron",
+				"Dwarven"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Old Hatred",
+					"entries": [
+						"When the dwarf is fighting Orcs, Goblins and their kind using a melee weapon, whenever the dwarf rolls for damage, it can re-roll its weapon’s damage dice and use either total."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dwarf-Forged Axe",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Now that there is a King Under the Mountain again, the Dwarves of the north have rallied under the banner of Dáin. Their wealth and influence grow with each passing year. The statistics here are typical of a Dwarven guard; a wandering pot-smith or traveller on the way back from the Blue Mountains might wear lighter armour and carry a mattock instead of an axe."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/hLIWxG9.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/hLIWxG9.png",
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "19375e97dbff72d398183b0aa238406d"
+		},
+		{
+			"name": "Dwarf-Lord",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"heavy mail"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 16,
+			"int": 15,
+			"wis": 13,
+			"cha": 14,
+			"skill": {
+				"athletics": "+7",
+				"survival": "+5",
+				"religion": "+6"
+			},
+			"passive": 11,
+			"languages": [
+				"Westron",
+				"Dwarven"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Old Hatred",
+					"entries": [
+						"When you are fighting Orcs, Goblins and their kind usinga melee weapon, whenever you roll for damage, you can re-roll your weapon’s damage dice and use either total. "
+					]
+				},
+				{
+					"name": "Dwarf-Forged Armour",
+					"entries": [
+						"Critical hits on the Dwarf- Lord become normal hits."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Dwarf-Lord makes two melee attacks."
+					]
+				},
+				{
+					"name": "Dwarf-Forged Mattock",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The descendants of Durin – the cousins and relatives of Thorin Oakenshield, like Dáin Ironfoot, and those kin to his trusted companions, like Gimli son of Gloin – have reclaimed much of the wealth and power of their ancestors. Dwarven kingdoms like Erebor, the Iron Hills and the Blue Mountains are once again linked by bonds of trade and kinship, and efforts are underway to reclaim other lost kingdoms, including the fabled Dwarrowdelf, known in the common tongue as Moria. This Dwarf-Lord looks to the future and sees a brighter age.",
+					"Motivation: Ensure that his followers are safe and prosperous.",
+					"Expectations:",
+					"• Tribute or profit. +2 if the Player-heroes can make the Dwarf-Lord wealthier, or promise the return of lost treasures of old.",
+					"• Great is the work of the Dwarves. +1 if the Playerheroes praise the craftsmanship and architecture of his hall.",
+					"• Flattery is for fools. -1 if the Player-heroes try to trick the Dwarf-Lord with honeyed words.",
+					"• No compromise, no forgiveness. -2 if old grudges and hatreds are recalled by the words of the Playerheroes."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/iwka1mr.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/iwka1mr.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "a66121f777d728fef53f04fd004d3ebf"
 		}
 	]
 }
