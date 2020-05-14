@@ -1,198 +1,3802 @@
 {
-
-	"monster": [{
-		"name": "Captain Blackheart",
-		"size": "M",
-		"type": "humanoid",
-		"source": "TalesoftheCaribbean",
-		"alignment": [
-			"L",
-			"E"
-		],
-		"ac": [
-			12,
+	"_meta": {
+		"sources": [
 			{
-				"ac": 15,
-				"condition": "with mage armor",
-				"braces": true
+				"json": "AiME",
+				"abbreviation": "AiME",
+				"full": "Adventures in Middle-Earth",
+				"url": "",
+				"authors": [
+					"Cubicle 7"
+				],
+				"convertedBy": [
+					"Gandalf Guy"
+				]
 			}
 		],
-		"hp": {
-			"formula": "14d8 + 28",
-			"average": 91
-		},
-		"speed": {
-			"walk": 30,
-			"swim": 15
-		},
-		"str": 16,
-		"dex": 14,
-		"con": 15,
-		"int": 12,
-		"wis": 12,
-		"cha": 18,
-		"passive": 11,
-		"cr": "6",
-		"shortName": "Blackheartumanoid\", \t\"source\": \"TalesoftheCaribbean\", \t\"alignment\": [ \t\t\"L\", \t\t\"E\" \t], \t\"ac\": [ \t\t12, \t\t{",
-		"languages": [
-			"Common",
-			"French"
-		],
-		"languageTags": [
-			"C"
-		],
-		"save": {
-			"wis": "+4",
-			"cha": "+7"
-		},
-		"skill": {
-			"arcana": "+4",
-			"history": "+4"
-		},
-		"resist": [
-			"psychic"
-		],
-		"spellcasting": [{
-				"name": "Innate Spellcasting",
-				"headerEntries": [
-					"Blackheart's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save {@dc 15}), requiring no material components:"
-				],
-				"will": [
-					"{@spell detect magic|PHB}",
-					"{@spell jump|PHB}",
-					"{@spell levitate|PHB}",
-					"{@spell mage armor|PHB} (self only)"
-				],
-				"daily": {
-					"1e": [
-						"{@spell arcane gate|PHB}",
-						"{@spell speak with dead|PHB}",
-						"{@spell true seeing|PHB}"
+		"dateAdded": 1589425211,
+		"dateLastModified": 1589425211
+	},
+	"monster": [
+		{
+			"name": "Great Orc",
+			"source": "AiME",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"scale mail"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 40",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 10,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"str": "+7",
+				"con": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"intimidation": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the Great Orc can move up to its speed toward a hostile creature that it can see."
 					]
 				},
-				"ability": "cha",
-				"type": "spellcasting"
-			},
-			{
-				"name": "Spellcasting",
-				"headerEntries": [
-					"Blackheart is a 14th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 15}, +7 to hit with spell attacks). He regains his expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
-				],
-				"spells": {
-					"0": {
-						"spells": [
-							"{@spell chill touch|PHB}",
-							"{@spell eldritch blast|PHB}",
-							"{@spell guidance|PHB}",
-							"{@spell mage hand|PHB}",
-							"{@spell minor illusion|PHB}",
-							"{@spell prestidigitation|PHB}",
-							"{@spell shocking grasp|PHB}"
-						]
-					},
-					"5": {
-						"spells": [
-							"{@spell armor of Agathys|PHB}",
-							"{@spell arms of Hadar|PHB}",
-							"{@spell clairvoyance|PHB}",
-							"{@spell contact other plane|PHB}",
-							"{@spell crown of madness|PHB}",
-							"{@spell detect thoughts|PHB}",
-							"{@spell dimension door|PHB}",
-							"{@spell dissonant whispers|PHB}",
-							"{@spell dominate beast|PHB}",
-							"{@spell telekinesis|PHB}",
-							"{@spell vampiric touch|PHB}"
-						],
-						"slots": 3,
-						"lower": 1
-					}
-				},
-				"ability": "cha",
-				"type": "spellcasting"
-			}
-		],
-		"spellcastingTags": [
-			"I",
-			"CL"
-		],
-		"trait": [{
-			"name": "Whispering Aura",
-			"entries": [
-				"At the start of each of Blackheart's turns, each creature of its choice within 5 feet of it must succeed on a {@dc 15} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage, provided that Blackheart isn't {@condition incapacitated}."
-			]
-		}],
-		"damageTags": [
-			"S",
-			"P",
-			"Y"
-		],
-		"isNamedCreature": true,
-		"reaction": [{
-			"name": "Shape Up, Ye Dog (2/Day)",
-			"entries": [
-				"Whenever a friendly creature within 30 feet of Blackheart that can hear it misses with an attack, Blackheart can yell perilous threats to allow that creature to reroll the attack roll."
-			]
-		}],
-		"action": [{
-				"name": "Multiattack",
-				"entries": [
-					"The captain makes two attacks: one with his flintlock pistol and one with its scimitar."
-				]
-			},
-			{
-				"name": "Scimitar",
-				"entries": [
-					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 6}) slashing damage."
-				]
-			},
-			{
-				"name": "Flintlock Pistol (Reload 1)",
-				"entries": [
-					"{@atk rw} {@hit 5} to hit, range 15/60 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
-				]
-			}
-		],
-		"actionTags": [
-			"Multiattack"
-		],
-		"miscTags": [
-			"MW",
-			"RW"
-		],
-		"tokenUrl": "https://i.imgur.com/YBs2HDN.png",
-		"fluff": {
-			"entries": [
-				"\"Angus Skyme came to the Spanish Main in the brig of HMSÂ Prudence. He escaped the gallows and gathered the roughest crew in the Caribbean. Blackheart shows no quarter to his victims or crew, and he has killed many of both for his amusement and profit. He still bears the scar from the duel he fought with Jack Hawkins over Lady Arcadia de Sol, and he still nurses the grudge that goes with it.\"",
-				"Known to use torture and other unspeakable acts to acquire gold, Blackheart is considered by many to be no better than the Cursed. Still, he is pirate through and through, only too willing to inflict a little bloodshed to guarantee respect.",
-				"Some say that Blackheart has already sold his soul to the demons of the sea. Others say that he fights them like he has fought everyone else: to his death or theirs.",
-				"Now that Blackheart has carved out an empire based on fear and terror, he can concentrate on his biggest goal: destroying the other pirates of the Spanish Main, starting with Jack Hawkins and his accursed monkey.",
-				"â€œNow tell me,â€ Blackheart said, his voice a low growl barely audible above the creaking in the shipâ€™s hold. â€œTell me where you buried De La Cruzâ€™ gold.â€",
-				"â€œNever!â€ Sunderland yelled, not quite believing his own feeble reply.",
-				"Blackheart shook his shaggy head, and beneath his grizzled beard cracked a smile like a broken dinner plate. He picked up a small chest and placed it on the barrel next to Sunderland, opening it so that the prone Englishman could see its contents. Blackheart extracted a pair of wicked metal implements with seemingly unnecessary blades and teeth.",
-				"â€œI think yeâ€™ll change your mind,â€ Blackheart said. Sunderlandâ€™s screams tore through the night, startling the men on watch who looked at each other nervously. Each time the shrieking began again, the helmsman took a drink of rum. An hour later, when Blackheart emerged from the hold, the helmsman could barely stand.",
-				"â€œHereâ€™s yer new heading,â€ Blackheart said, dropping a rough map on the deck, drawn in blood on a torn bandage. â€œMake for that island as if Hell itself were on yer heels.â€"
-			],
-			"images": [{
-				"type": "image",
-				"href": {
-					"type": "external",
-					"url": "https://i.imgur.com/osUyW3V.jpg"
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the Great Orc has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
 				}
-			}]
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Great Orc makes two attacks with its heavy scimitar, orc-axe, or spear."
+					]
+				},
+				{
+					"name": "Heavy Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Orc-Axe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 4}) piercing damage in melee, or 8 ({@damage 1d8 + 4}) piercing damage if used in a two-handed melee attack."
+					]
+				},
+				{
+					"name": "Leadership",
+					"entries": [
+						"(Recharges after a short or long rest). When using Leadership as an action, for 1 minute, the Great Orc can utter a roar of encouragement whenever a non-hostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a {@dice d4} to its roll provided it can hear and   nderstand the Great Orc. A creature can benefit from only one Leadership die at a time. This effect ends if the Great Orc is {@condition incapacitated}."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Great Orcs are a powerful breed of Orc often encountered as leaders and chieftains of their weaker-blooded relatives. Legends hint at the possibility that they descend from servant spirits that once took an Orcish shape to serve the Dark Power’s purposes. King Golfimbul, the Great Goblin, Azog and his son Bolg were Great Orcs."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/FJVIdtb.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/FJVIdtb.png",
+			"traitTags": [
+				"Aggressive",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"uniqueId": "7b1ff07e944bee6347616265f4298fe7"
 		},
-		"environment": [
-			"coastal"
-		],
-		"group": "Pirates",
-		"isNpc": true,
-		"alias": [
-			"Blackbeard",
-			"Edward Thatch",
-			"Edward Teach"
-		],
-		"uniqueId": "d7c14116fd5f00d0f03c092f06417d39"
-	}]
-
-
+		{
+			"name": "Hobgoblin",
+			"source": "AiME",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item shield|phb}",
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 30 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the creature can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the creature has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "No Quarter",
+					"entries": [
+						"If the Hobgoblin does enough damage to drop a creature to 0 hit points, it immediately adds an extra 12 ({@damage 4d6}) damage for purposes of determining whether the creature dies instantly."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Hobgoblin makes two attacks: one with its bite and with the orc-axe."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Orc-axe",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Hobgoblins are an especially malevolent race of Orcs bred in the North in ages past. They are tall and gaunt, with long limbs and flat, almost noseless faces. Only a few members of that fell race survive today, in dark caverns beneath the Grey Mountains and under the Mountains of Mirkwood. Like the smaller Goblins of the mountains, they hate the light of the sun and rarely venture far from their lairs, but they are exceedingly powerful at night or when prowling in darkness (their small but acute eyes and extraordinary sense of smell let them see perfectly even in total darkness).",
+					"Cruel and cannibalistic, Hobgoblins are never encountered with other breeds of Orcs. They also barely tolerate the company of Trolls, and prefer to conduct their raids with the help of Wolves and Great Bats."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/otYomGt.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/otYomGt.png",
+			"traitTags": [
+				"Aggressive",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "51221a5589519ffbbb1210f421a5c4b4"
+		},
+		{
+			"name": "Marsh-Hag",
+			"source": "AiME",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "4d8 + 4",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 17,
+			"con": 12,
+			"int": 9,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"athletics": "+4",
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The Marsh-hag can hold its breath for such long periods that it is effectively a water-breather in combat situations."
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The Marsh-hag can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The Marsh-hag has advantage on an attack roll against a creature if at least one of the Marshhag’s allies is within 5 feet of the creature and that ally isn’t {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage, and the target – if not already {@condition grappled}, in which case the Marsh-hag merely does damage – is {@condition grappled} (escape {@dc 16}). Until this grapple ends,  he target is {@condition restrained}. The Marsh-hag usually tries to suffocate {@condition grappled} victims."
+					]
+				}
+			],
+			"environment": [
+				"swamp"
+			],
+			"fluff": {
+				"entries": [
+					"These solitary monsters appear to be large, twisted Watergoblins, with long arms and iron-hard claws. They are called hags as their heads seem covered by thick tresses of green hair, giving them the appearance of horrible, wicked crones. Marsh-hags hide in watery chambers beneath deep stagnant pools, waiting for an unfortunate traveller to stumble upon their hiding place. When a victim is within its reach, the Marsh-hag emerges to drown and devour its victim, and then retreats to its subaqueous haunts. When faced by a serious threat, like a group of men-at-arms or well-prepared adventurers, several Marsh-hags emerge together and confront the menace: while one hag seizes an opponent, another slashes at the victim with its claws."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/4RZv3jl.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/4RZv3jl.png",
+			"traitTags": [
+				"Amphibious",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"uniqueId": "a3f7d6ce3ead88f60c89d966839b4490"
+		},
+		{
+			"name": "Black Uruk",
+			"source": "AiME",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"leather corslet",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 15",
+				"average": 37
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 16,
+			"int": 9,
+			"wis": 11,
+			"cha": 12,
+			"skill": {
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the creature can move up to its speed toward a hostile creature that it can see."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bent Sword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Large, evil Orcs of great strength, picked from among the fiercest to act as lieutenants, bodyguards or chosen warriors, they are sent to reinforce a colony of lesser Orcs."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/CzoHa6Q.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/CzoHa6Q.png",
+			"traitTags": [
+				"Aggressive"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"uniqueId": "950bd334d13dcf90cc4fef39f8b48431"
+		},
+		{
+			"name": "Messenger of Lugbúrz",
+			"source": "AiME",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"leather corslet"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 6",
+				"average": 15
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 11,
+			"cha": 15,
+			"skill": {
+				"stealth": "+5",
+				"deception": "+5",
+				"intimidation": "+5",
+				"persuasion": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Westron",
+				"Orkish",
+				"Silvan"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the creature can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The creature can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the creature has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Heavy Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Jagged Knife",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a short or long rest).",
+					"entries": [
+						"When using Leadership as an action, for 1 minute, this orc can utter a special command or warning whenever a non-hostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a {@dice d4} to its roll provided it can hear and understand the orc. A creature can benefit from only one Leadership die at a time. This effect ends if the orc is {@condition incapacitated}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The creature adds 2 to its AC against one melee attack that would hit it. To do this, the creature must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"An emissary of the Shadow, a Messenger of Lugbúrz is always on an errand for his Master, be it to spy upon Men, Elves or  dwarves, or to rouse all creatures with evil intent in an area."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/vWk3ETf.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/vWk3ETf.png",
+			"traitTags": [
+				"Aggressive",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "d7db9b687bc6477999f915c1a4745eca"
+		},
+		{
+			"name": "Snaga Tracker",
+			"source": "AiME",
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"leather corslet"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6 + 0",
+				"average": 7
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 11,
+			"int": 11,
+			"wis": 11,
+			"cha": 15,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+6",
+				"survival": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the creature has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn, the Snaga Tracker deals an extra 3 ({@damage 1d6}) damage when it hits a target with a  weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Snaga Tracker that isn’t {@condition incapacitated} and the Snaga Tracker doesn’t have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Jagged Knife",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Bow of Horn",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage. The victim must also make a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The creature adds 2 to its AC against one melee attack that would hit it. To do this, the creature must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Snaga trackers are a smaller breed gifted with wide, snuffling nostrils, able to catch the scent of enemies from a distance, even after a prolonged period of time has passed. Trackers are a weak and lazy lot, but quick and clever."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Owd411A.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Owd411A.png",
+			"traitTags": [
+				"Sneak Attack",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"uniqueId": "1c6affa1b167515616a73ae57f207841"
+		},
+		{
+			"name": "Misty Mountain Goblin",
+			"source": "AiME",
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"leather corslet",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6 + 0",
+				"average": 7
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 10,
+			"int": 10,
+			"wis": 8,
+			"cha": 8,
+			"skill": {
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The creature can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the creature has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bent Sword",
+					"entries": [
+						"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 1} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}3 ({@damage 1d6 - 1}) piercing damage in melee, or 3 ({@damage 1d6 - 1}) piercing damage at range."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The creature adds 2 to its AC against one melee attack that would hit it. To do this, the creature must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"environment": [
+				"mountain",
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"Among the most numerous of the malicious creatures serving the Shadow, the Orcs of the Misty Mountains are used to living and making war in the deep places beneath the earth, where their sight is keener than any other Orc. When they are encountered in their mines, they are savage fighters and reckless in assault, but they leave the dark under the mountains only when marching to war or to avenge their fallen kind, as they badly suffer the light of the sun.",
+					"The Orcs of the Misty Mountains are a wild and independent lot, bent on their own purposes and aims when the Shadow’s influence is weak, but ready to obey the will of their Master when directly subject to it. The smallest among them are often referred to as Goblins."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/p8iMRbQ.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/p8iMRbQ.png",
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"uniqueId": "db906d97950329cb6308724ba5015998"
+		},
+		{
+			"name": "Orc-Chieftain",
+			"source": "AiME",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"cobbled-together Orc armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d6 + 8",
+				"average": 36
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"intimidation": "+3",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The creature can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the creature has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Orc-Chieftain makes two attacks."
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a short or long rest).",
+					"entries": [
+						"When using Leadership as an action, for 1 minute, this orc can utter a special command or warning whenever a non-hostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a {@dice d4} to its roll provided it can hear and understand the orc. A creature can benefit from only one Leadership die at a time. This effect ends if the orc is {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Orc-Axe",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage in melee, or 6 ({@damage 1d6 + 3}) piercing damage at range, or 7 ({@damage 1d8 + 3}) two-handed melee damage if used with both hands."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The creature adds 2 to its AC against one melee attack that would hit it. To do this, the creature must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Only the most wicked and cruel of Orcs live long enough to become chieftains and lead their tribe or war band to battle. An Orc-chieftain is easy to recognize, as it is usually the largest in a group, wielding the keenest weapons and donning superior armour. Often, tell-tale scars or mutilations mark a chieftain’s long service under the Shadow."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/lgGguG2.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/lgGguG2.png",
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"uniqueId": "9c5c999c4414089145d66ad9bd6e1a9d"
+		},
+		{
+			"name": "Orc Soldier",
+			"source": "AiME",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"leather jerkin"
+					]
+				},
+				{
+					"ac": 15,
+					"from": [
+						"leather jerkin",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 6",
+				"average": 15
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 13,
+			"int": 7,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"intimidation": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the creature can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the creature has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bent Sword",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage in melee, or 4 ({@damage 1d6 + 3}) piercing damage at range."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Often armed with characteristic bent swords, Orc Soldiers are a loud, undisciplined lot. Only a forceful chieftain with a cruel whip and a sharp blade can keep them in line..."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/10Clbbo.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/10Clbbo.png",
+			"traitTags": [
+				"Aggressive",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"uniqueId": "0ef0b02914a612ec6ddf500bfa7a6bf6"
+		},
+		{
+			"name": "Goblin Archer",
+			"source": "AiME",
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"leather jerkin"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 4",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 10,
+			"int": 9,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 30 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the creature has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Hawk’s Eye",
+					"entries": [
+						"The Goblin Archer does not suffer disadvantage on long ranged attacks."
+					]
+				},
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the Goblin Archer can move up to its speed toward a hostile creature that it can see."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Jagged Knife",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 }) piercing damage. "
+					]
+				},
+				{
+					"name": "Bow of Horn",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage. The victim must also make a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The creature adds 2 to its AC against one melee attack that would hit it. To do this, the creature must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A Goblin Archer is an Orc chosen for his keen eyes. His ability to see in the dark, coupled with a steady hand, lets him shoot arrows with precision by night or day."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/dhOLAjR.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/dhOLAjR.png",
+			"traitTags": [
+				"Aggressive",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Parry"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"uniqueId": "809b04054e1a52c20e3516dd0c04798d"
+		},
+		{
+			"name": "Orc Guard",
+			"source": "AiME",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"mail",
+						"shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 12",
+				"average": 30
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 17,
+			"int": 8,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the creature can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the creature has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bent Sword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 4}) piercing damage in melee, or 4 ({@damage 1d6 + 3}) piercing damage at range."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The strongest and boldest Orcs are equipped with the toughest armour they can find or put together. Wielding a sword and sturdy shield, they are placed to keep watch on an area."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/NqfsKFr.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/NqfsKFr.png",
+			"traitTags": [
+				"Aggressive",
+				"Sunlight Sensitivity"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"uniqueId": "0c9128e2b220ca79e5c55912f593be4e"
+		},
+		{
+			"name": "Attercop",
+			"source": "AiME",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"spider"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 5",
+				"average": 27
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 13,
+			"dex": 16,
+			"con": 12,
+			"int": 11,
+			"wis": 11,
+			"cha": 6,
+			"skill": {
+				"stealth": "+5"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The creature has advantage on an attack roll against a creature if at least one of the creature's allies is within 5 feet of the creature and the ally isn’t {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Spiderclimb",
+					"entries": [
+						"The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the creature knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The creature ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage. The victim must also make a {@dc 13} Constitution saving throw or be paralysed for one day."
+					]
+				},
+				{
+					"name": "Web {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/60 ft., one Large or smaller creature. {@h}The creature is {@condition restrained} by webbing. As an action, the {@condition restrained} creature can make a {@dc 11} Strength check, escaping from the webbing on a success. The effect also ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"fluff": {
+				"entries": [
+					"Many-eyed and many-legged, Attercops are giant Spiders reaching up to the size of boars. They are crafty predators who attack unwary victims, first tying them up with their Spider-thread and then poisoning them. While a single Attercop does not pose a significant threat to any but a lessexperienced adventurer, a roused Spider-colony can be a challenge even for a veteran company of heroes."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/1w0hcbZ.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/1w0hcbZ.png",
+			"traitTags": [
+				"Pack Tactics",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"uniqueId": "f2013c7c0ec36f242664de81664453ac"
+		},
+		{
+			"name": "Great Spider",
+			"source": "AiME",
+			"size": "H",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"spider"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d12 + 5",
+				"average": 70
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 18,
+			"dex": 20,
+			"con": 16,
+			"int": 11,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"stealth": "+10"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Fear Aura",
+					"entries": [
+						"Any creature hostile to the Great Spider that starts its turn within 30 feet of the Great Spider must make a {@dc 13} Wisdom saving throw, unless the Great Spider is {@condition incapacitated}. On a failed save, the creature is {@condition frightened} until the start of its next turn. If a creature’s saving throw is successful, the creature is immune to any Great Spider’s Fear Aura for the next 24 hours."
+					]
+				},
+				{
+					"name": "Spiderclimb",
+					"entries": [
+						"The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the creature knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The creature ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Great Spider makes two attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}20 ({@damage 310 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d8 + 4}) piercing damage. The victim must also make a {@dc 13} Constitution saving throw or be paralysed for one day."
+					]
+				},
+				{
+					"name": "Web {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/60 ft., one Large or smaller creature. {@h}The creature is {@condition restrained} by webbing. As an action, the {@condition restrained} creature can make a {@dc 14} Strength check, escaping from the webbing on a success. The effect also ends if the webbing is destroyed. The webbing has AC 10, 15 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage."
+					]
+				},
+				{
+					"name": "Fearsome Gaze",
+					"entries": [
+						"The Great Spider can look an enemy in the eyes and paralyze them with fear. This is considered a spell action (so it can’t be combined with a melee attack). It may select one target within 20 feet and force that creature to make a {@dc 13} Wisdom saving throw. On a failed save, the creature gains the paralysed condition for {@dice 1d4} rounds and the Great Spider may use any of its attacks (including webbing) as a bonus action against the paralysed target. Once a creature succeeds in a saving throw, it is immune to this ability for 24 hours."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"fluff": {
+				"entries": [
+					"Great Spiders display their dreadful heritage much more prominently than the lesser Attercops. They are gigantic in size, sometimes as big as horses or greater, but their soft, flexible bodies enable them to hide in surprisingly narrow passages. While they can always be described as monstrous Spider creatures, their features often differ from one individual to another. The number and appearance of their legs and eyes may vary, for instance – some are supported by long, thin stalks; others move about on strong, hairy limbs ending in claw-like appendages; some spy from the dark with clustered eyes; and others follow their prey with bulbous, many-windowed eyes. Regardless of the details, Great Spiders are always a terrifying sight."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/bLuE3sE.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/bLuE3sE.png",
+			"traitTags": [
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated",
+				"restrained"
+			],
+			"uniqueId": "5cec64adc1ea82ce9c626306fa667dc2"
+		},
+		{
+			"name": "Cave-Troll",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 18",
+				"average": 51
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 7,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "4",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Cave-troll makes two attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"Cave-trolls were created to fight and hunt deep under the earth. Barely more intelligent than wild beasts, they have dark skin with a greenish hue, covered with tight, robust scales. While not necessarily inferior in size to other breeds of Trolls, they appear shorter as they are extremely hunched and often advance on all fours, walking on their knuckles.",
+					"Nobody knows if Cave-trolls can endure the light of the sun, as they never leave their hunting grounds under mountains, hills and fells."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/GEXsbuP.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/GEXsbuP.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "2445ecc28df49796af534ecdaf700372"
+		},
+		{
+			"name": "Hill-Troll Chief",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armour, hide"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 50",
+				"average": 105
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 8,
+			"con": 20,
+			"int": 5,
+			"wis": 12,
+			"cha": 9,
+			"skill": {
+				"intimidation": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The troll makes two attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Maul",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}17 ({@damage 4d6 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					"A Troll-chief is a larger, meaner and more intelligent Hilltroll, a formidable opponent even for the most valorous (or reckless) heroes."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/FlNMynt.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/FlNMynt.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "c3a3e7af6fbd04d16097c2e6b4675857"
+		},
+		{
+			"name": "Hill-Troll",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 21",
+				"average": 59
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 7,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Maul",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					"Hill-trolls are the most common breed of this cruel race, as they prowl desolate areas from the Coldfells in the north to Gorgoroth in the south. They are wild and beastly in battle, prone to bellowing and roaring to intimidate their enemies, but can be disciplined to use simple weapons and armour."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ITxbnnr.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/ITxbnnr.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "8ec1a56a84a33802d1aa7af5efed4e17"
+		},
+		{
+			"name": "Marsh-Ogre",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 24",
+				"average": 68
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 16,
+			"int": 5,
+			"wis": 7,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"cr": "2",
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"swamp"
+			],
+			"fluff": {
+				"entries": [
+					"Some of the more terrifying tales surviving in the North talk of horrible man-eating Giants who were said to prowl lonely moors and bogs in search of prey. The most dangerous among them are said to have once lived in the marshes to the east of Mirkwood.",
+					"No one has seen an Ogre in recent times, and the old and wise among the Men of the Lake say that they retreated among the mists of the bogs when Smaug took residence under the Lonely Mountain – few monsters were a match for a great Dragon! But now Smaug is dead, and the Marshogres could emerge once again from their stinking retreats to threaten Lake-town and its prospering inhabitants.",
+					"A Marsh-ogre is a huge monster, as big as a Mountaintroll, although they cannot match those beast’s pure aggression and prowess at arms. Ogres are brutish and beastly, speaking no languages spoken by Men, Dwarves or Elves."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/st4fXj0.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/st4fXj0.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "af3c64c5eadb9881559a6e294e9b9602"
+		},
+		{
+			"name": "Mountain-Troll",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d10 + 36",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 6,
+			"con": 18,
+			"int": 4,
+			"wis": 7,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Fear Aura",
+					"entries": [
+						"Any creature hostile to the Mountain-troll that starts its turn within 10 feet of the Mountain-troll must make a {@dc 15} Wisdom saving throw, unless the Mountain-troll is {@condition incapacitated}. On a failed save, the creature is {@condition frightened} until the start of its next turn. If a creature’s saving throw is successful, the creature is immune to the Mountain-troll’s Fear Aura for the next 24 hours."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The troll makes two attacks."
+					]
+				},
+				{
+					"name": "Greatcub",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}16 ({@damage 4d10 + 6}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					"Mountain-trolls are the largest of all Troll-races, often twelve feet or more in height. Immensely strong and dangerous, luckily they are rarely encountered, and are dull-witted and slow."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/BzVzumR.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/BzVzumR.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated"
+			],
+			"uniqueId": "de15e9c57892eb725741cbbb3beaaf46"
+		},
+		{
+			"name": "Stone-Troll",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 21",
+				"average": 59
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 8,
+			"con": 16,
+			"int": 8,
+			"wis": 7,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Westron",
+				"Orkish"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Sunlight Curse",
+					"entries": [
+						"Stone-Trolls permanently turn to stone if they are touched by the light of the sun. Once the sun rises, a Stone-troll must make a {@dc 13} Dexterity saving throw every minute to find enough cover as to not be turned."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The troll makes two attacks."
+					]
+				},
+				{
+					"name": "Greatcub",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					"Stone-Trolls live in small groups in filthy caves strewn with the remains of unwary travellers. They seem to be more intelligent than other Troll types, maybe thanks to their habit of prowling in the proximity of populated areas. Their appearance, while always frightful, is made less monstrous by their tendency to wear simple clothes, cook their food and use tools like drinking jugs and barrels.",
+					"A very ancient breed, Stone-Trolls owe their name to the fact that they turn to stone if exposed to the light of the Sun."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/m05LfDQ.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/m05LfDQ.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "c3942e0f87622be610bd7beb6d31b544"
+		},
+		{
+			"name": "Wild Wolf",
+			"source": "AiME",
+			"size": "L",
+			"type": "beast",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 8",
+				"average": 30
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 14,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Wargspeech"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Fear of Fire",
+					"entries": [
+						"Wild Wolves are fearful of fire. If a torch or other flame comes within 10 feet of them, the Wild Wolf suffers disadvantage on its attack rolls. In addition, the Wild Wolf is not able to use its Pack Tactics ability."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d6 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					"The average Warg, a Wild Wolf is slightly larger than an ordinary Wolf, and much more vicious. It can be encountered in packs, but also as a solitary hunter or scout, ready to howl and alert other Wargs and evil creatures for miles around. Orcs learn how to ride upon Wild Wolves like men do on horses."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/slTX20o.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/slTX20o.png",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/539/wolf.mp3",
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"uniqueId": "cc565862adce7ac3345a4af9e2e43fe4"
+		},
+		{
+			"name": "Wolf Leader",
+			"source": "AiME",
+			"size": "L",
+			"type": "beast",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 21",
+				"average": 59
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 16,
+			"int": 7,
+			"wis": 12,
+			"cha": 9,
+			"skill": {
+				"stealth": "+6",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Wargspeech",
+				"Westron"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Fear of Fire",
+					"entries": [
+						"The wolf is fearful of fire. If a torch or other flame comes within 10 feet of it, the wolf suffers disadvantage on its attack rolls. In addition, the wolf is not able to use its Pack Tactics ability."
+					]
+				},
+				{
+					"name": "Fear Aura",
+					"entries": [
+						"Any creature hostile to the Wolf Leader that starts its turn within 10 feet of the Wolf Leader must make a {@dc 11} Wisdom saving throw, unless the Wolf Leader is {@condition incapacitated}. On a failed save, the creature is {@condition frightened} until the start of its next turn. If a creature’s saving throw is successful, the creature is immune to the Wolf Leader’s Fear Aura for the next 24 hours."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Wolf Leader makes two attacks with its bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					"The average Warg, a Wild Wolf is slightly larger than an ordinary Wolf, and much more vicious. It can be encountered in packs, but also as a solitary hunter or scout, ready to howl and alert other Wargs and evil creatures for miles around. Orcs learn how to ride upon Wild Wolves like men do on horses."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/JYcUEo6.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/JYcUEo6.png",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/539/wolf.mp3",
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated",
+				"prone"
+			],
+			"uniqueId": "0d29bd5c07d07daf74f7f2f40ff19c11"
+		},
+		{
+			"name": "Werewolf",
+			"source": "AiME",
+			"size": "L",
+			"type": "fiend",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 60",
+				"average": 126
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 22,
+			"dex": 20,
+			"con": 20,
+			"int": 20,
+			"wis": 16,
+			"cha": 12,
+			"skill": {
+				"perception": "+7",
+				"stealth": "+9"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 30 ft."
+			],
+			"passive": 17,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning"
+					]
+				},
+				{
+					"resist": [
+						"piercing"
+					]
+				},
+				{
+					"resist": [
+						"slashing"
+					]
+				}
+			],
+			"languages": [
+				"Westron",
+				"Orkish",
+				"Silvan"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The Werewolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Fear Aura",
+					"entries": [
+						"Any creature hostile to the Werewolf that starts its turn within 10 feet of the Werewolf must make a {@dc 15} Wisdom saving throw, unless the Werewolf is {@condition incapacitated}. On a failed save, the creature is {@condition frightened} until the start of its next turn. If a creature’s saving throw is successful, the creature is immune to the Werewolf’s Fear Aura for the next 24 hours."
+					]
+				},
+				{
+					"name": "Savage Attack",
+					"entries": [
+						"If the Werewolf scores a critical hit on a creature, it does an additional 3 ({@damage 1d6}) damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Werewolf makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 6}) piercing damage"
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"fluff": {
+				"entries": [
+					"The average Warg, a Wild Wolf is slightly larger than an ordinary Wolf, and much more vicious. It can be encountered in packs, but also as a solitary hunter or scout, ready to howl and alert other Wargs and evil creatures for miles around. Orcs learn how to ride upon Wild Wolves like men do on horses."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/aCrJsXg.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/aCrJsXg.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated"
+			],
+			"uniqueId": "d7abefd504d59d9b161e92393ad398ab"
+		},
+		{
+			"name": "Hound of Sauron",
+			"source": "AiME",
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d10 + 45",
+				"average": 94
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 9,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning"
+					]
+				},
+				{
+					"resist": [
+						"piercing"
+					]
+				},
+				{
+					"resist": [
+						"slashing"
+					]
+				}
+			],
+			"languages": [
+				"Wargspeech"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The hound has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Fear Aura",
+					"entries": [
+						"Any creature hostile to the hound that starts its turn within 10 feet of the Wolf Leader must make a {@dc 13} Wisdom saving throw, unless the hound is {@condition incapacitated}. On a failed save, the creature is {@condition frightened} until the start of its next turn. If a creature’s saving throw is successful, the creature is immune to the hound’s Fear Aura for the next 24 hours."
+					]
+				},
+				{
+					"name": "Savage Attack",
+					"entries": [
+						"If the Hound scores a critical hit on a creature, it does an additional 3 ({@damage 1d6}) damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Hound makes two attacks with its bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Chosen for its ferocity and malicious intelligence, a Hound of Sauron is a minion of the Dark Lord, a servant sent on a precise errand, be it the gathering of forces for a coming war, the hunt for a specific individual, or spying on an area. Hidden behind the shape of an ordinary Warg, a Hound of Sauron conceals much greater powers."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/6M8r9e6.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/6M8r9e6.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated",
+				"prone"
+			],
+			"uniqueId": "7f6b60dc4d757cdf938be4dd4aaf86b7"
+		},
+		{
+			"name": "Balrog",
+			"source": "AiME",
+			"page": 55,
+			"size": "H",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"Maiar"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 262,
+				"formula": "21d12 + 126"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 26,
+			"dex": 15,
+			"con": 22,
+			"int": 20,
+			"wis": 16,
+			"cha": 22,
+			"save": {
+				"str": "+14",
+				"con": "+12",
+				"wis": "+9",
+				"cha": "+12"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"cold",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks or non-Elven weapons"
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Westron",
+				"Orkish",
+				"Black Speech",
+				"Sylvan"
+			],
+			"cr": "19",
+			"trait": [
+				{
+					"name": "Fire Aura",
+					"entries": [
+						"At the start of each of the balrog's turns, each creature within 5 feet of it takes 10 ({@damage 3d6}) fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature that touches the balrogor hits it with a melee attack while within 5 feet of it takes 10 ({@damage 3d6}) fire damage."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The balroghas advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The balrog's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "The Shadow Is Upon You:",
+					"entries": [
+						"Upon first encountering the balrog, a creature must make a Wisdom saving throw against {@dc 17} or become {@condition Frightened} for 1 minute. A creature can repeat the saving throw at the end of  each of its turns, ending the effect on itself on a success. If a creature’s saving throw against being {@condition Frightened} is successful or the effect ends for it, the creature is immune to this ability for the next 24 hours."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The balrog makes two attacks: one Sword and one Whip. If it has lost one of these weapons, it makes a Claw attack instead; if it has lost both, it may make two Claw attacks."
+					]
+				},
+				{
+					"name": "Sword of Flame",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d8 + 8}) slashing damage plus 13 ({@damage 3d8}) lightning damage. If the balrog scores a critical hit, it rolls damage dice three times, instead of twice."
+					]
+				},
+				{
+					"name": "Whip of Many Thongs",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 30 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage plus 10 ({@damage 3d6}) fire damage, and the target must succeed on a {@dc 20} Strength saving throw or be pulled up to 25 feet toward the balrog."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d4 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Thundering Roar",
+					"entries": [
+						"The balrog utters a roar of such intensity that each creature within 500 feet capable of hearing must make a Constitution saving throw against {@dc 12} or suffer Disadvantage on Wisdom (Perception) checks that require hearing for 1 minute. "
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					"Balrog is Sindarin for ‘demon of might’, and these are mighty foes indeed. According to Tolkien’s later writings, no more than seven of these creatures ever existed. They were Maiar corrupted by Morgoth before the Awakening of the Elves, and it was said that they were his oldest and most trusted servants, and that only winged Fire-Drakes were more terrible in battle. In the First Age, Fëanor was slain by a wound from Gothmog, Lord of the Balrogs, and the balrogs rode upon the dragon-back to reach Gondolin during that city’s Fall. Glorfindel fought and killed one by casting it down from a cliff, but he was pulled down with it and died as well.",
+					"At the end of the First Age, several were destroyed in the War of Wrath, but some escaped and hid in caverns deep within the earth. None reappear in the tales we have until late in the Third Age, when dwarves mining mithril in Moria awoke one. It slew King Durin VI, and was thereafter called “Durin’s Bane”. Of course, others might exist, and might serve Sauron—or act as independent powers in their own right.",
+					"In appearance, a balrog is a humanoid shape all aflame, with horns, hooved legs, and claws of brightly glowing steel. It is surrounded by a cloud of shadow, towering to twice the balrog’s own not-inconsiderable height (Tolkien says they are twice as tall as elves—thus, 10 to 13 feet tall), and flowing out to the side in wing-like extensions."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/O6gejE4.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/O6gejE4.png",
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"S"
+			],
+			"damageTags": [
+				"F",
+				"L",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"Frightened"
+			],
+			"uniqueId": "3fa0144e849fd5d424fe1e170cc79900"
+		},
+		{
+			"name": "Creature Actions & Abilites",
+			"shortName": "Creature",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Big",
+					"entries": [
+						"This creature is a large specimen of its kind. Add +1 Hit Die, +2 to its strength, and thus +1 to melee damage."
+					]
+				},
+				{
+					"name": "Clumsy",
+					"entries": [
+						"Visibly less capable and confident than its fellows, on failing an attack roll, this creature must make a Dexterity save of {@dc 12} or fall over, acquiring the {@condition prone} condition. "
+					]
+				},
+				{
+					"name": "Coward",
+					"entries": [
+						"When injured, this creature suffers disadvantage on all combat rolls. "
+					]
+				},
+				{
+					"name": "Deeply Sinister",
+					"entries": [
+						"This creature exudes menace of a deeply unsettling kind. Attacks against this creature are made at with a -1 modifier. "
+					]
+				},
+				{
+					"name": "Desperate",
+					"entries": [
+						"This wild-eyed creature begins attacking madly if it believes its life is in danger. When this creature reaches half its hit point total, it adds an advantage to its attack rolls. "
+					]
+				},
+				{
+					"name": "Dirty Brawler",
+					"entries": [
+						"In addition to a fearsome countenance, this creature favours the shove action in combat, and will always attempt to use it. "
+					]
+				},
+				{
+					"name": "Gimlet Eyed",
+					"entries": [
+						"This creature inflicts +2 damage on all damage rolls made at night or underground. "
+					]
+				},
+				{
+					"name": "Hatred (Subject) {@recharge 5}",
+					"entries": [
+						"This creature hates members of a specified culture so much that it goes out of its way to do them ill. The creature has advantage on attacks against the hated race. Such creatures often signal their dislike of a given culture with harsh insults and promises at the opening of combat. "
+					]
+				},
+				{
+					"name": "Mewling",
+					"entries": [
+						"When this creature loses half its initial hit points, it will attempt to flee."
+					]
+				},
+				{
+					"name": "Poisonous",
+					"entries": [
+						"One or more of this creature’s attacks are toxic. After being successfully attacked, targets must make a Constitution saving throw against a {@dc 13} or acquire the {@condition poisoned} condition for the duration of the battle. "
+					]
+				},
+				{
+					"name": "Poorly Armed",
+					"entries": [
+						"This creature’s weapons or natural attacks are inferior to the average of its kind. Its damage rolls are subject to a -2 modifier. "
+					]
+				},
+				{
+					"name": "Poorly Protected",
+					"entries": [
+						"This creature’s armour, either worn or natural, is of a lesser quality than average. Reduce its Armour Class by 2. "
+					]
+				},
+				{
+					"name": "Really Big",
+					"entries": [
+						"This creature is larger than others of its kind. Increase its size category by 1. Add 2 additional Hit Dice, +4 to its Strength, and thus +2 to the damage it inflicts. "
+					]
+				},
+				{
+					"name": "Rubbery Skin",
+					"entries": [
+						"This creature’s rubbery flesh is immune to bludgeoning damage. "
+					]
+				},
+				{
+					"name": "Screamer",
+					"entries": [
+						"This creature constantly yells and screams in a particularly piercing fashion, causing foes attacking it to suffer disadvantage on their attack rolls. "
+					]
+				},
+				{
+					"name": "Starving Cannibal",
+					"entries": [
+						"This creature breaks from combat as soon as an ally is killed and attempts to move toward the fallen in order to eat them. "
+					]
+				},
+				{
+					"name": "Stony Hide",
+					"entries": [
+						"This creature’s hardened skin, unusually tough scales, or impenetrable chitin provides resistance to piercing and slashing damage. "
+					]
+				},
+				{
+					"name": "Stupid",
+					"entries": [
+						"This creature always takes the least favourable action using scenery or hazards on a battlefield – falling into pits, moving onto unfavourable ground, triggering stalactites to fall and so on. "
+					]
+				},
+				{
+					"name": "Tittering Laugh",
+					"entries": [
+						"This creature continually laughs or makes other peculiar noises in a very disturbing and offputting manner. Foes within 10 feet must make a Wisdom saving throw against a {@dc 12} or attack this creature in preference to any other enemies, including closer or more dangerous ones. "
+					]
+				},
+				{
+					"name": "War Paint",
+					"entries": [
+						"When creatures so marked fight in combat and outnumber their foes by more than 2 to 1, they gain a +1 to all attack and damage rolls. "
+					]
+				},
+				{
+					"name": "Weak in Limb",
+					"entries": [
+						"This creature moves at half the speed normal for creatures of its type."
+					]
+				},
+				{
+					"name": "Weakling",
+					"entries": [
+						"This creature has half the number of hit points rolled for it. It appears visibly weaker than its companions."
+					]
+				},
+				{
+					"name": "Weak Willed",
+					"entries": [
+						"When damaged by an attack, this creature attempts to disengage its foe and move to attack a different adversary as soon as it is able to do so."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite Attack",
+					"entries": [
+						"This creature’s wide maw and menacing teeth allow it to make a bite melee weapon attack, {@hit 1} to hit, with a 5ft range, against one target. {@h}5 ({@damage 2d4}) slashing damage."
+					]
+				},
+				{
+					"name": "Call for Aid",
+					"entries": [
+						"A creature with this ability may take an action to seek assistance from nearby allies. Orcs blow horns, Wolves howl, Trolls roar, Spiders make unusual chittering sounds. {@dice 1d4} creatures of the same type arrive in {@dice 1d6 + 1} rounds. If all the original opponents are slain, the allies are unable to find them and do not appear, unless the Loremaster wishes them to do so. "
+					]
+				},
+				{
+					"name": "Disarming Strike",
+					"entries": [
+						"This creature can aim to strike blows to knock whatever its opponent is holding out of its hand. On a successful roll to hit, their opponent must make a Dexterity save of {@dc 12} or drop whatever they are holding. The attack does no other damage. "
+					]
+				},
+				{
+					"name": "Distraction Attack",
+					"entries": [
+						"This especially wily-looking creature can take an action to feint, kick burning ash, or otherwise distract an opponent with whom it is engaged in melee. The opponent must make a Wisdom saving throw against {@dc 10} + the distracting creature’s Dexterity modifier or the distracting creature’s attacks have advantage against the opponent until the end of its next turn. "
+					]
+				},
+				{
+					"name": "Great Leap",
+					"entries": [
+						"This creature is capable of jumping huge distances. This creature may make a special Dash action to go twice its normal speed in a single jump. Any opponents in melee combat with the creature when it uses Great Leap get opportunity attacks as normal. "
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"This creature can make more than one attack with a single action. "
+					]
+				},
+				{
+					"name": "Sneaking {@recharge 6}",
+					"entries": [
+						"This creature inflicts an extra {@damage 2d6} damage to a target it hits with a weapon attack if its target is within 5 feet of an ally of the creature. "
+					]
+				},
+				{
+					"name": "Vile (1/day)",
+					"entries": [
+						"This creature is capable of horrific, disgusting or revolting acts. When it takes a vile action, its opponents must make a Wisdom saving throw against a {@dc 15} or be {@condition stunned} until the end of this creature’s next turn. "
+					]
+				},
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, this creature can move up to its speed toward a foe that it can see."
+					]
+				},
+				{
+					"name": "Bandolier of Knives {@recharge 4}.",
+					"entries": [
+						"As a bonus action, this creature can hurl a cluster of small blades at any opponent within 10 feet. The target must make a Dexterity saving throw against a {@dc 12} + this creature’s Dexterity modifier or suffer {@dice 1d6} + the creature’s Dexterity modifier in damage. "
+					]
+				},
+				{
+					"name": "Berserk",
+					"entries": [
+						"After the first round of combat, this creature may make a single melee weapon attack as a bonus action on each of its turns. "
+					]
+				},
+				{
+					"name": "Fell Speed",
+					"entries": [
+						"This creature may take a bonus action to Disengage from one opponent and engage another without provoking an opportunity attack. The new opponent must be within the creature’s regular movement rate. "
+					]
+				},
+				{
+					"name": "Foul Reek",
+					"entries": [
+						"This creature exudes such a horrid stink that, as a bonus action, it can force an opponent engaged in melee combat with it to make a Constitution saving throw against a {@dc 12} or acquire the {@condition poisoned} condition until the end of its next turn. "
+					]
+				},
+				{
+					"name": "Long Arms",
+					"entries": [
+						"This creature’s extended limbs allow it to unexpectedly lash out at unwary opponents. This creature may take a bonus action to effectively add 5 feet to its reach till its next turn. In most cases, this gives the creature a reach of 10 feet with any following melee attacks or attacks of opportunity. "
+					]
+				},
+				{
+					"name": "Savage Assault",
+					"entries": [
+						"When this creature rolls a natural 18 or 19, it may, as a bonus action, make a single additional melee attack against the same opponent. "
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Biter",
+					"entries": [
+						"When wounded, this creature can, as a reaction,make a single bite melee attack against any single target at {@hit 1} to hit, with a 5ft range. {@h}5 ({@damage 2d4}) slashing damage. "
+					]
+				},
+				{
+					"name": "Reckless Hatred",
+					"entries": [
+						"When reduced to 0 hit points, this creature can, as a reaction, make a single melee attack against any target within 5 feet before succumbing to death. "
+					]
+				},
+				{
+					"name": "Snake-like Speed {@recharge 5}",
+					"entries": [
+						"This creature is adept at avoiding injury and can use its reaction to halve the attack damage on an attack that it is aware of. "
+					]
+				},
+				{
+					"name": "Vicious Hiss (Recharge after a short or long rest)",
+					"entries": [
+						"After this creature has taken 10 or more points of damage, it may, as a reaction, express its anger in a very threatening manner, such as a piercing hiss or a devastating bellow. All opponents engaging the creature must make a Wisdom saving throw against a {@dc 15} or suffer disadvantage on ability checks and attack rolls until the creature is defeated. "
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"uniqueId": "2901e8911408934b3eea21cfee1c9673"
+		},
+		{
+			"name": "Great Bat",
+			"source": "AiME",
+			"size": "L",
+			"type": "beast",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 0",
+				"average": 22
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 11,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 11,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Echolocation",
+					"entries": [
+						"The Great Bat can’t use its blindsight while {@condition deafened}."
+					]
+				},
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The Great Bat has advantage on Wisdom (Perception) checks that rely on hearing."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the Great Bat has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Unusually large bats, whose taste for blood often leads them to follow when Orcs and Wargs go on raids or to war."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/VN8gxfO.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/VN8gxfO.png",
+			"traitTags": [
+				"Keen Senses",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "3f489014913c27e54b29e29a830404ec"
+		},
+		{
+			"name": "Secret Shadow",
+			"source": "AiME",
+			"size": "L",
+			"type": "fiend",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 8",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 17,
+			"dex": 18,
+			"con": 13,
+			"int": 9,
+			"wis": 14,
+			"cha": 8,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+7"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Westron",
+				"Orkish",
+				"Silvan"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Echolocation",
+					"entries": [
+						"The Secret Shadow can’t use its blindsight while {@condition deafened}."
+					]
+				},
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The Secret Shadow has advantage on Wisdom (Perception) checks that rely on hearing."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the Secret Shadow  has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The Secret Shadow can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Savage Attack",
+					"entries": [
+						"If the Secret Shadow scores a critical hit on a creature, it does an additional 3 ({@damage 1d6}) damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Secret Shadow makes two attacks with its bite and claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Bewilder",
+					"entries": [
+						"The Secret Shadow can briefly assume the appearance of a beautiful humanoid, confusing all around her. All creatures within 30 feet of the Secret Shadow must make a {@dc 12} Wisdom saving throw or be {@condition Stunned} for {@dice 1d4 + 1} rounds. The Secret Shadow may then make a melee attack against a {@condition stunned} creature as a bonus action. A Secret Shadow can only use this ability once per long rest."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Taking the form of great misshapen bats, these servants of Sauron fly on their great-fingered wings to carry his dark tidings or to spy upon the land, or join a swarm of Great Bats when war or hunt has provided them with prey. These Vampires belong to an astute and patient breed, always aware of the will of their Master and ready to do his bidding. Ages ago they were able to disguise their foul appearance and appear as beautiful women. Today, they may appear as such only briefly, to confound their opponents. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Uyavn4C.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Uyavn4C.png",
+			"traitTags": [
+				"Keen Senses",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"Stunned"
+			],
+			"uniqueId": "9c29ea449ebdb477657b3fdf08602905"
+		},
+		{
+			"name": "Ruthless Bandit",
+			"source": "AiME",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"Leather Corslet"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 0",
+				"average": 18
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 11,
+			"int": 10,
+			"wis": 11,
+			"cha": 8,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Westron"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Coward",
+					"entries": [
+						"When injured, the Bandit suffers Disadvantage on all combat rolls"
+					]
+				},
+				{
+					"name": "No Quarter",
+					"entries": [
+						"When the Bandit reduces an enemy to 0 hit points that enemy is considered to already have failed on death save."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Short Sword",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Short Bow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/t1SIlP7.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/t1SIlP7.png",
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"uniqueId": "992b55cca9a8e368345e62399c3535b7"
+		},
+		{
+			"name": "Amos, Less Stone-Troll",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d10 + 18",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 8,
+			"wis": 7,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Westron",
+				"Orcish"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Sunlight Curse",
+					"entries": [
+						"Stone-trolls become {@condition Petrified} and turn into stone if they are touched by the bright light of the sun. In direct sunlight, a Stone-troll must make a {@dc 10} Dexterity saving throw at the beginning of its turn in order to find enough cover to avoid being turned to stone. On a failure, the Stone-troll becomes {@condition Petrified}. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spiked Troll-club",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"fluff": {
+				"entries": [
+					"Stone-Trolls live in small groups in filthy caves strewn with the remains of unwary travellers. They seem to be more intelligent than other Troll types, maybe thanks to their habit of prowling in the proximity of populated areas. Their appearance, while always frightful, is made less monstrous by their tendency to wear simple clothes, cook their food and use tools like drinking jugs and barrels.",
+					"A very ancient breed, Stone-Trolls owe their name to the fact that they turn to stone if exposed to the light of the Sun."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/kxXlGpU.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/kxXlGpU.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "a4098e8a78a3c33394cdecbbcb2126db"
+		},
+		{
+			"name": "Ettin Guardian",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 9,
+					"from": [
+						"unarmored"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 84",
+				"average": 161
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 23,
+			"int": 6,
+			"wis": 10,
+			"cha": 4,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				}
+			],
+			"languages": [
+				"Westron",
+				"Orcish"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Horrible Strength",
+					"entries": [
+						"If the Ettin makes a successful melee attack, it may use its bonus action to cause 5 additional damage of the same type to the target."
+					]
+				},
+				{
+					"name": "Two-headed",
+					"entries": [
+						"Ettins with two heads are much harder to catch unawares. Any attempts at Stealth are made with Disadvantage and the Ettin gains Advantage on both active and passive Perception checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Crushing Blow",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Seize Victim {@recharge 5}",
+					"entries": [
+						"The Ettin may choose to spend an action grabbing a creature within 5 feet of them. The target is automatically {@condition Grappled} if it is of Medium size or smaller. To escape the Troll’s grasp, the target must use an action to escape: they must succeed on a {@dc 15} Strength (Athletics) or Dexterity (Acrobatics). If the creature fails, it takes 5 bludgeoning damage and remains {@condition Grappled}. An Ettin can seize a number of victims up to the number of hands that it possesses, but cannot use Crushing Blow if it does not have a free hand."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/3l6dBtB.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/3l6dBtB.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"Grappled"
+			],
+			"uniqueId": "96ea729fb2bb8cb5c7652c9e7ae81394"
+		},
+		{
+			"name": "Olog-hai Captain",
+			"shortName": "Captain",
+			"source": "AiME",
+			"size": "L",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"troll"
+				]
+			},
+			"alignment": null,
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"close-fitting mesh"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d10 + 99",
+				"average": 159
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 13,
+			"con": 28,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"intimidation": "+6",
+				"perception": "+5",
+				"survival": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Westron",
+				"Orcish",
+				"Black Speech"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Hideous Toughness (Recharge after a short or long rest)",
+					"entries": [
+						"The captain can endure enormous damage. By spending an action reciting words of power in the Black Speech, the Captain gains a pool of 10 ({@dice 3d6}) temporary hit points that last till the end of the fight if not removed by combat damage"
+					]
+				},
+				{
+					"name": "Horrible Strength",
+					"entries": [
+						"If the captain makes a successful melee attack, it may use its bonus action to cause 7 additional damage of the same type to the target."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Captain makes three attacks: two with its notched blade and one with its claw."
+					]
+				},
+				{
+					"name": "Notched Sword",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) slashing damage (heavy two-handed weapon)."
+					]
+				},
+				{
+					"name": "Jagged Claw",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d4 + 7}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Fearsome {@recharge 5-6}",
+					"entries": [
+						"The Captain may use its reaction when it is struck by an enemy to activate this ability. That enemy must make a {@dc 15} Wisdom saving throw. If it fails the saving throw the attack fails and it becomes {@condition Frightened} of the Captain until the end of the Captain’s next turn."
+					]
+				},
+				{
+					"name": "Parry",
+					"entries": [
+						"The Captain adds +4 to its AC against one melee attack that would hit it. To do so, the creature must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Mormog is a member of a new troll-race, bred by Sauron himself in recent years, in preparation for his great war. They are called Olog-hai in the Black Speech, and are stronger and faster than most of the older races."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ZpQ1tct.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/ZpQ1tct.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "7cbbf24b93646ad52149ee31bd53599f"
+		}
+	]
 }
